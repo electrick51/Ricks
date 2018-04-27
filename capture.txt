@@ -1,0 +1,324 @@
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Sending Arm All key
+Got UI Message
+Received a Q message
+¸*00 01 FF FF Got a packet to send
+Got a packet to send
+07 73 00 1A 00 00 25 BB Waiting for response
+Done reading bytes
+¸*03 07 41 32 Got Sta—¨…­•½¹•É•…‘¥¹‰åÑ•Í)5ş¸*03 08 01 36 Got Ping packet
+Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Sending Arm All key
+Done reades
+ bytGot UI Message
+Received a Q message
+¸*01 02 FÆ¸*03 07 41 32 Got a packet to send
+Got a packet to send
+07 73 00 1A 00 00 25 BB Waiting for response
+Done reading bytes
+03 07 41 32 03 07 41 32 Done reading bytes
+11 öºDone reading bytes
+58 öºDone reading bytes
+B0 öºDone reading bytes
+C4 öºDone reading bytes
+82 öºDone reading bytes
+38 öºDone reading bytes
+FB öºDone reading bytes
+7C öºDone reading bytes
+82 öºDone reading bytes
+80 öºDone reading bytes
+FB öºDone reading bytes
+94 öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+68 öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+2C öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+D0 öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+A4 öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+58 öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+1C öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+E0 öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+34 öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+C8 öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+8C öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+70 öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+04 öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+F8 öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+BC öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+40 öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+54 öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+A8 öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+EC öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+10 öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+64 öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+98 öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+DC öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+20 öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+34 öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+C8 öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+8C öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+70 öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+04 öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+F8 öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+BC öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+40 öºDone reading bytes
+¸*03 07 41 32 Gõ¹•É•…‘¥¹‰åÑ•Í)5ş54 öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+A8 öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+EC öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+10 öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+64 öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+98 öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+DC öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+20 öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+F4 öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+08 öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+4C öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+B0 öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+C4 öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+38 öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+7C öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+80 öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+94 öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+68 öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+2C öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+D0 öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+A4 öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+58 öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+B1 öºDone reading bytes
+1C öºDone reading bytes
+82 öºDone reading bytes
+3B öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Gõ¹•É•…‘¥¹‰åÑ•Í)5ş¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Got UI Message
+Sending One Key
+Received a Q message
+¸*02 03 FF FF Got a packet to send
+Got a packet to send
+07 73 00 01 00 00 55 BC Waiting for response
+Done reading bytes
+Got UI Message
+¸*03 07 41 32 Received a Q message
+¸*03 04 FF FF Got a packet to send
+Got a packet to send
+07 73 00 02 00 00 A5 BC Waiting for response
+Done reading bytes
+Got UI Message
+Received a Q message
+¸*03 07 41 32 ¸*04 05 FF FF Got a packet to send
+Got a packet to send
+07 73 00 03 00 00 F4 7C Waiting for response
+Got UI Message
+Received a Q message
+Done reading bytes
+¸*05 06 FF FF Got a packet to send
+03 07 41 32 03 07 41 32 07 73 00 04 00 00 45 BD Waiting for response
+Got a packet to send
+Done reading bytes
+03 07 41 32 03 07 41 32 Done reading bytes
+41 öºDone reading bytes
+72 öºDone reading bytes
+72 öºDone reading bytes
+82 öºDone reading bytes
+5B öºDone reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Gõ¹•É•…‘¥¹‰åÑ•Í)5ş¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 Done reading bytes
+¸*03 07 41 32 

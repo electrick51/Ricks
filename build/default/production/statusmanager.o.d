@@ -1,0 +1,22 @@
+build/default/production/statusmanager.o:  \
+statusmanager.c  \
+dataflash.h  \
+ exactint.h  \
+threads.h  \
+queue.h  \
+uimanager.h  \
+Timers.h  \
+sys_variables.h  \
+ dlpktdef.h  \
+EXACTINT.h  \
+sensor.h  \
+rtcc.h  \
+display.h  \
+keypress.h  \
+ulpktdef.h  \
+ dfformat.h  \
+debugMessages.h  \
+sysFunctions.h  \
+resources.h  \
+statusmanager.h  \
+ leds.h 

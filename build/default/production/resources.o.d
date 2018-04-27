@@ -1,0 +1,20 @@
+build/default/production/resources.o:  \
+resources.c  \
+twttsdef.h  \
+EXACTINT.h  \
+ statusmanager.h  \
+sys_variables.h  \
+dlpktdef.h  \
+queue.h  \
+exactint.h  \
+ uimanager.h  \
+Timers.h  \
+keypress.h  \
+display.h  \
+ulpktdef.h  \
+sensor.h  \
+rtcc.h  \
+ dfformat.h  \
+resources.h  \
+xprintf.h  \
+pnserial.h 

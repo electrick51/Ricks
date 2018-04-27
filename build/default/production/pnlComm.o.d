@@ -1,0 +1,27 @@
+build/default/production/pnlComm.o:  \
+pnlComm.c  \
+queue.h  \
+exactint.h  \
+ uimanager.h  \
+Timers.h  \
+sys_variables.h  \
+dlpktdef.h  \
+EXACTINT.h  \
+sensor.h  \
+ rtcc.h  \
+display.h  \
+keypress.h  \
+ulpktdef.h  \
+debugMessages.h  \
+ TouchscreenFiles/threads.h  \
+TouchscreenFiles/queue.h  \
+leds.h  \
+ mcc_generated_files/uart1.h  \
+TouchscreenFiles/sys_variables.h  \
+pnlComm.h  \
+ TouchscreenFiles/pnserial.h  \
+TouchscreenFiles/exactint.h  \
+ TouchscreenFiles/dlpktdef.h  \
+TouchscreenFiles/resources.h  \
+ mcc_generated_files/uart2.h  \
+statusmanager.h 
