@@ -94,78 +94,78 @@ void status_manager_message_init(void)
 // */
 void clear_delay_info(void)
 {
-//struct VDATA vData;
-////   
-////    vData.delay_tm = 0;
-////    vData.entry_delay=0;
-////    vData.exit_delay=0;         
-////}   
+struct VDATA vData;
+   
+    vData.delay_tm = 0;
+    vData.entry_delay=0;
+    vData.exit_delay=0;         
+}   
 //// 
 /////**
 //// *
 //// *  update timers - called once a second
 //// *
 //// */
-////void update_sys_timers(void)
-////{
-////    extern struct VDATA vData;
-////
-////    vData.running_seconds++;
-////    //
-////    // update the entry/exit delay time
-////    //
-////    if( vData.delay_tm)
-////    {
-////        vData.delay_tm--;
-////    }
-////    else
-////    {
-////        clear_delay_info();
-////    }
-////    //
-////    //update password tmr
-////    //
-////    if(vData.password_tmr)
-////    {
-////        vData.password_tmr--;    
-////    }
-////    else
-////    {   
-////        vData.user_lvl = undefined_lvl;  
-////    }          
-////    //
-////    // update minute timer
-////    //
-////    if(vData.running_seconds >= 60)
-////    {
-////        struct PANELDATA panelData;
-////        struct TimePkt time;
-////        struct DatePkt date;
-////        
-////        //update the time clock once a minute
-////        panelData.inputDataLen = 0;
-////        getPanelData(tTime, &panelData);
-////        time.tm_hour = panelData.data.time.tm_hour;
-////        time.tm_min = panelData.data.time.tm_min;        
-////        time.tm_sec = panelData.data.time.tm_sec;
-////        date.tm_mday = panelData.data.time.tm_mday;
-////        date.tm_mon = panelData.data.time.tm_mon;
-////        date.tm_wday = panelData.data.time.tm_wday;
-////        date.tm_year = panelData.data.time.tm_year;       
-////        RTCC_set(&time,&date);
-////        
-////        vData.running_seconds = 0;
-////        //RTCC_get(&vData.rtc);               //read the real time clock once a minute =>moved into  void draw_tm1() function
-////        vData.minute_tmr++;
-//////        updateBacklightBrightnessStatus(eUpdateLcdLedBrightnessTmr);
-////        sendDisplayVersion(0);        
-////        if(vData.minute_tmr >= 60 )
-////        {
-////            vData.minute_tmr = 0;
-////            vData.hour_tmr++;
-////        }
-////        motion_tmrs_update();
-////    }
+void update_sys_timers(void)
+{
+    extern struct VDATA vData;
+
+    vData.running_seconds++;
+    //
+    // update the entry/exit delay time
+    //
+    if( vData.delay_tm)
+    {
+        vData.delay_tm--;
+    }
+    else
+    {
+        clear_delay_info();
+    }
+    //
+    //update password tmr
+    //
+    if(vData.password_tmr)
+    {
+        vData.password_tmr--;    
+    }
+    else
+    {   
+        vData.user_lvl = undefined_lvl;  
+    }          
+    //
+    // update minute timer
+    //
+    if(vData.running_seconds >= 60)
+    {
+        struct PANELDATA panelData;
+        struct TimePkt time;
+        struct DatePkt date;
+        
+        //update the time clock once a minute
+//        panelData.inputDataLen = 0;
+//        getPanelData(tTime, &panelData);
+//        time.tm_hour = panelData.data.time.tm_hour;
+//        time.tm_min = panelData.data.time.tm_min;        
+//        time.tm_sec = panelData.data.time.tm_sec;
+//        date.tm_mday = panelData.data.time.tm_mday;
+//        date.tm_mon = panelData.data.time.tm_mon;
+//        date.tm_wday = panelData.data.time.tm_wday;
+//        date.tm_year = panelData.data.time.tm_year;       
+//        RTCC_set(&time,&date);
+        
+        vData.running_seconds = 0;
+        //RTCC_get(&vData.rtc);               //read the real time clock once a minute =>moved into  void draw_tm1() function
+        vData.minute_tmr++;
+//        updateBacklightBrightnessStatus(eUpdateLcdLedBrightnessTmr);
+        sendDisplayVersion(0);        
+        if(vData.minute_tmr >= 60 )
+        {
+            vData.minute_tmr = 0;
+            vData.hour_tmr++;
+        }
+//        motion_tmrs_update();
+    }
 }
 
 /**
@@ -190,7 +190,7 @@ static void status_manager_thread(void)
     //   static struct TstatTemperatureDisplayPktB *tstatPktB;
     //   static union TwttsEvent event;
     //   static struct WeatherForecastPktA weatherPktA;
-    //   static uint16_t sec_tic;
+       static uint16_t sec_tic;
 
     struct Message_Data *pevent_msg;
     //   static uint8_t scratch
@@ -516,11 +516,11 @@ static void status_manager_thread(void)
 
             }// switch	
         }// event_msg
-        //		if(timers_seconds_elapsed(sec_tic))
-        //		{
-        //		   sec_tic = timers_seconds_get();
-        //		   update_sys_timers();
-        //		}
+        		if(timers_seconds_elapsed(sec_tic))
+        		{
+        		   sec_tic = timers_seconds_get();
+        		   update_sys_timers();
+        		}
         LED_Off(LED_D7);
         context_switch(); //no message received so sleep for 100mS second - allow other threads to run
     }

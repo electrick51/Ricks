@@ -625,7 +625,7 @@ uint16_t writePanelData( struct PANELDATA *panelData )
   {
 //    initUart1();
     /* reload interval timer */
-//    datachecktime = timers_milliseconds_get();
+    datachecktime = timers_milliseconds_get();
 
     // clear rx fifo buffer
 //    while (DataRdyUART1())
@@ -637,12 +637,12 @@ uint16_t writePanelData( struct PANELDATA *panelData )
     rxIndex = 0;
     ++attempts;
     /* set timer for panel response */
-//    starttime = timers_milliseconds_get();
+    starttime = timers_milliseconds_get();
 //    U1STAbits.UTXEN = 1; // start transmission
 
     while (rxIndex < 4)
     {
-//      if (timers_milliseconds_elapsed(starttime) > 500)
+      if (timers_milliseconds_elapsed(starttime) > 500)
       {
         ++timeout1;
         ++retries1;
@@ -706,9 +706,9 @@ enum RESOURCESTATUS readPanelData( struct PANELDATA *panelData )
 //  DisableIntU1TX;
 //  DisableIntU1RX;
   // here to send a block of data
-//  starttime = timers_milliseconds_get();
+  starttime = timers_milliseconds_get();
 
-//  if (timers_milliseconds_elapsed(starttime) < 100)
+  if (timers_milliseconds_elapsed(starttime) < 100)
   {
   //  settling time
   }
@@ -734,7 +734,7 @@ enum RESOURCESTATUS readPanelData( struct PANELDATA *panelData )
   {
 //    initUart1();
     /* reload interval timer */
-//    datachecktime = timers_milliseconds_get();
+    datachecktime = timers_milliseconds_get();
 
     // clear rx fifo buffer
 //    while (DataRdyUART1())
@@ -746,12 +746,12 @@ enum RESOURCESTATUS readPanelData( struct PANELDATA *panelData )
     rxIndex = 0;
     ++attempts;
     /* set timer for panel response */
-//    starttime = timers_milliseconds_get();
+    starttime = timers_milliseconds_get();
 //    U1STAbits.UTXEN = 1; // start transmission
 
     while (1)
     {
-//      tmp = timers_milliseconds_elapsed(starttime);
+      tmp = timers_milliseconds_elapsed(starttime);
 
       if (tmp > 1500) //wait no more than 1.5 second
       {
