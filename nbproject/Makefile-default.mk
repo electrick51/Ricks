@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=mcc_generated_files/spi1.c mcc_generated_files/pin_manager.c mcc_generated_files/uart1.c mcc_generated_files/i2c1.c mcc_generated_files/mcc.c mcc_generated_files/interrupt_manager.c mcc_generated_files/tmr3.c mcc_generated_files/tmr2.c mcc_generated_files/uart2.c mcc_generated_files/uart3.c main.c leds.c lcd.c lcd_printf.c pnlComm.c debugMessages.c buttons.c TouchscreenFiles/queue.c TouchscreenFiles/threads.c UIthread.c statusmanager.c sys_variables.c dataflashSQI.c resources.c KeypadThread.c mcc_generated_files/uart4.c
+SOURCEFILES_QUOTED_IF_SPACED=mcc_generated_files/spi1.c mcc_generated_files/pin_manager.c mcc_generated_files/uart1.c mcc_generated_files/i2c1.c mcc_generated_files/mcc.c mcc_generated_files/interrupt_manager.c mcc_generated_files/tmr3.c mcc_generated_files/tmr2.c mcc_generated_files/uart2.c mcc_generated_files/uart3.c mcc_generated_files/uart4.c main.c leds.c lcd.c lcd_printf.c pnlComm.c debugMessages.c buttons.c TouchscreenFiles/queue.c TouchscreenFiles/threads.c UIthread.c statusmanager.c sys_variables.c dataflashSQI.c resources.c KeypadThread.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/mcc_generated_files/spi1.o ${OBJECTDIR}/mcc_generated_files/pin_manager.o ${OBJECTDIR}/mcc_generated_files/uart1.o ${OBJECTDIR}/mcc_generated_files/i2c1.o ${OBJECTDIR}/mcc_generated_files/mcc.o ${OBJECTDIR}/mcc_generated_files/interrupt_manager.o ${OBJECTDIR}/mcc_generated_files/tmr3.o ${OBJECTDIR}/mcc_generated_files/tmr2.o ${OBJECTDIR}/mcc_generated_files/uart2.o ${OBJECTDIR}/mcc_generated_files/uart3.o ${OBJECTDIR}/main.o ${OBJECTDIR}/leds.o ${OBJECTDIR}/lcd.o ${OBJECTDIR}/lcd_printf.o ${OBJECTDIR}/pnlComm.o ${OBJECTDIR}/debugMessages.o ${OBJECTDIR}/buttons.o ${OBJECTDIR}/TouchscreenFiles/queue.o ${OBJECTDIR}/TouchscreenFiles/threads.o ${OBJECTDIR}/UIthread.o ${OBJECTDIR}/statusmanager.o ${OBJECTDIR}/sys_variables.o ${OBJECTDIR}/dataflashSQI.o ${OBJECTDIR}/resources.o ${OBJECTDIR}/KeypadThread.o ${OBJECTDIR}/mcc_generated_files/uart4.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/mcc_generated_files/spi1.o.d ${OBJECTDIR}/mcc_generated_files/pin_manager.o.d ${OBJECTDIR}/mcc_generated_files/uart1.o.d ${OBJECTDIR}/mcc_generated_files/i2c1.o.d ${OBJECTDIR}/mcc_generated_files/mcc.o.d ${OBJECTDIR}/mcc_generated_files/interrupt_manager.o.d ${OBJECTDIR}/mcc_generated_files/tmr3.o.d ${OBJECTDIR}/mcc_generated_files/tmr2.o.d ${OBJECTDIR}/mcc_generated_files/uart2.o.d ${OBJECTDIR}/mcc_generated_files/uart3.o.d ${OBJECTDIR}/main.o.d ${OBJECTDIR}/leds.o.d ${OBJECTDIR}/lcd.o.d ${OBJECTDIR}/lcd_printf.o.d ${OBJECTDIR}/pnlComm.o.d ${OBJECTDIR}/debugMessages.o.d ${OBJECTDIR}/buttons.o.d ${OBJECTDIR}/TouchscreenFiles/queue.o.d ${OBJECTDIR}/TouchscreenFiles/threads.o.d ${OBJECTDIR}/UIthread.o.d ${OBJECTDIR}/statusmanager.o.d ${OBJECTDIR}/sys_variables.o.d ${OBJECTDIR}/dataflashSQI.o.d ${OBJECTDIR}/resources.o.d ${OBJECTDIR}/KeypadThread.o.d ${OBJECTDIR}/mcc_generated_files/uart4.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/mcc_generated_files/spi1.o ${OBJECTDIR}/mcc_generated_files/pin_manager.o ${OBJECTDIR}/mcc_generated_files/uart1.o ${OBJECTDIR}/mcc_generated_files/i2c1.o ${OBJECTDIR}/mcc_generated_files/mcc.o ${OBJECTDIR}/mcc_generated_files/interrupt_manager.o ${OBJECTDIR}/mcc_generated_files/tmr3.o ${OBJECTDIR}/mcc_generated_files/tmr2.o ${OBJECTDIR}/mcc_generated_files/uart2.o ${OBJECTDIR}/mcc_generated_files/uart3.o ${OBJECTDIR}/mcc_generated_files/uart4.o ${OBJECTDIR}/main.o ${OBJECTDIR}/leds.o ${OBJECTDIR}/lcd.o ${OBJECTDIR}/lcd_printf.o ${OBJECTDIR}/pnlComm.o ${OBJECTDIR}/debugMessages.o ${OBJECTDIR}/buttons.o ${OBJECTDIR}/TouchscreenFiles/queue.o ${OBJECTDIR}/TouchscreenFiles/threads.o ${OBJECTDIR}/UIthread.o ${OBJECTDIR}/statusmanager.o ${OBJECTDIR}/sys_variables.o ${OBJECTDIR}/dataflashSQI.o ${OBJECTDIR}/resources.o ${OBJECTDIR}/KeypadThread.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/mcc_generated_files/spi1.o.d ${OBJECTDIR}/mcc_generated_files/pin_manager.o.d ${OBJECTDIR}/mcc_generated_files/uart1.o.d ${OBJECTDIR}/mcc_generated_files/i2c1.o.d ${OBJECTDIR}/mcc_generated_files/mcc.o.d ${OBJECTDIR}/mcc_generated_files/interrupt_manager.o.d ${OBJECTDIR}/mcc_generated_files/tmr3.o.d ${OBJECTDIR}/mcc_generated_files/tmr2.o.d ${OBJECTDIR}/mcc_generated_files/uart2.o.d ${OBJECTDIR}/mcc_generated_files/uart3.o.d ${OBJECTDIR}/mcc_generated_files/uart4.o.d ${OBJECTDIR}/main.o.d ${OBJECTDIR}/leds.o.d ${OBJECTDIR}/lcd.o.d ${OBJECTDIR}/lcd_printf.o.d ${OBJECTDIR}/pnlComm.o.d ${OBJECTDIR}/debugMessages.o.d ${OBJECTDIR}/buttons.o.d ${OBJECTDIR}/TouchscreenFiles/queue.o.d ${OBJECTDIR}/TouchscreenFiles/threads.o.d ${OBJECTDIR}/UIthread.o.d ${OBJECTDIR}/statusmanager.o.d ${OBJECTDIR}/sys_variables.o.d ${OBJECTDIR}/dataflashSQI.o.d ${OBJECTDIR}/resources.o.d ${OBJECTDIR}/KeypadThread.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/mcc_generated_files/spi1.o ${OBJECTDIR}/mcc_generated_files/pin_manager.o ${OBJECTDIR}/mcc_generated_files/uart1.o ${OBJECTDIR}/mcc_generated_files/i2c1.o ${OBJECTDIR}/mcc_generated_files/mcc.o ${OBJECTDIR}/mcc_generated_files/interrupt_manager.o ${OBJECTDIR}/mcc_generated_files/tmr3.o ${OBJECTDIR}/mcc_generated_files/tmr2.o ${OBJECTDIR}/mcc_generated_files/uart2.o ${OBJECTDIR}/mcc_generated_files/uart3.o ${OBJECTDIR}/main.o ${OBJECTDIR}/leds.o ${OBJECTDIR}/lcd.o ${OBJECTDIR}/lcd_printf.o ${OBJECTDIR}/pnlComm.o ${OBJECTDIR}/debugMessages.o ${OBJECTDIR}/buttons.o ${OBJECTDIR}/TouchscreenFiles/queue.o ${OBJECTDIR}/TouchscreenFiles/threads.o ${OBJECTDIR}/UIthread.o ${OBJECTDIR}/statusmanager.o ${OBJECTDIR}/sys_variables.o ${OBJECTDIR}/dataflashSQI.o ${OBJECTDIR}/resources.o ${OBJECTDIR}/KeypadThread.o ${OBJECTDIR}/mcc_generated_files/uart4.o
+OBJECTFILES=${OBJECTDIR}/mcc_generated_files/spi1.o ${OBJECTDIR}/mcc_generated_files/pin_manager.o ${OBJECTDIR}/mcc_generated_files/uart1.o ${OBJECTDIR}/mcc_generated_files/i2c1.o ${OBJECTDIR}/mcc_generated_files/mcc.o ${OBJECTDIR}/mcc_generated_files/interrupt_manager.o ${OBJECTDIR}/mcc_generated_files/tmr3.o ${OBJECTDIR}/mcc_generated_files/tmr2.o ${OBJECTDIR}/mcc_generated_files/uart2.o ${OBJECTDIR}/mcc_generated_files/uart3.o ${OBJECTDIR}/mcc_generated_files/uart4.o ${OBJECTDIR}/main.o ${OBJECTDIR}/leds.o ${OBJECTDIR}/lcd.o ${OBJECTDIR}/lcd_printf.o ${OBJECTDIR}/pnlComm.o ${OBJECTDIR}/debugMessages.o ${OBJECTDIR}/buttons.o ${OBJECTDIR}/TouchscreenFiles/queue.o ${OBJECTDIR}/TouchscreenFiles/threads.o ${OBJECTDIR}/UIthread.o ${OBJECTDIR}/statusmanager.o ${OBJECTDIR}/sys_variables.o ${OBJECTDIR}/dataflashSQI.o ${OBJECTDIR}/resources.o ${OBJECTDIR}/KeypadThread.o
 
 # Source Files
-SOURCEFILES=mcc_generated_files/spi1.c mcc_generated_files/pin_manager.c mcc_generated_files/uart1.c mcc_generated_files/i2c1.c mcc_generated_files/mcc.c mcc_generated_files/interrupt_manager.c mcc_generated_files/tmr3.c mcc_generated_files/tmr2.c mcc_generated_files/uart2.c mcc_generated_files/uart3.c main.c leds.c lcd.c lcd_printf.c pnlComm.c debugMessages.c buttons.c TouchscreenFiles/queue.c TouchscreenFiles/threads.c UIthread.c statusmanager.c sys_variables.c dataflashSQI.c resources.c KeypadThread.c mcc_generated_files/uart4.c
+SOURCEFILES=mcc_generated_files/spi1.c mcc_generated_files/pin_manager.c mcc_generated_files/uart1.c mcc_generated_files/i2c1.c mcc_generated_files/mcc.c mcc_generated_files/interrupt_manager.c mcc_generated_files/tmr3.c mcc_generated_files/tmr2.c mcc_generated_files/uart2.c mcc_generated_files/uart3.c mcc_generated_files/uart4.c main.c leds.c lcd.c lcd_printf.c pnlComm.c debugMessages.c buttons.c TouchscreenFiles/queue.c TouchscreenFiles/threads.c UIthread.c statusmanager.c sys_variables.c dataflashSQI.c resources.c KeypadThread.c
 
 
 CFLAGS=
@@ -163,6 +163,13 @@ ${OBJECTDIR}/mcc_generated_files/uart3.o: mcc_generated_files/uart3.c  nbproject
 	@${RM} ${OBJECTDIR}/mcc_generated_files/uart3.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  mcc_generated_files/uart3.c  -o ${OBJECTDIR}/mcc_generated_files/uart3.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/mcc_generated_files/uart3.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -mno-eds-warn  -omf=elf -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off  
 	@${FIXDEPS} "${OBJECTDIR}/mcc_generated_files/uart3.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
+	
+${OBJECTDIR}/mcc_generated_files/uart4.o: mcc_generated_files/uart4.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/uart4.o.d 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/uart4.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  mcc_generated_files/uart4.c  -o ${OBJECTDIR}/mcc_generated_files/uart4.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/mcc_generated_files/uart4.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -mno-eds-warn  -omf=elf -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off  
+	@${FIXDEPS} "${OBJECTDIR}/mcc_generated_files/uart4.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
 ${OBJECTDIR}/main.o: main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
@@ -269,13 +276,6 @@ ${OBJECTDIR}/KeypadThread.o: KeypadThread.c  nbproject/Makefile-${CND_CONF}.mk
 	${MP_CC} $(MP_EXTRA_CC_PRE)  KeypadThread.c  -o ${OBJECTDIR}/KeypadThread.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/KeypadThread.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -mno-eds-warn  -omf=elf -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off  
 	@${FIXDEPS} "${OBJECTDIR}/KeypadThread.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
-${OBJECTDIR}/mcc_generated_files/uart4.o: mcc_generated_files/uart4.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/uart4.o.d 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/uart4.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  mcc_generated_files/uart4.c  -o ${OBJECTDIR}/mcc_generated_files/uart4.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/mcc_generated_files/uart4.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -mno-eds-warn  -omf=elf -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off  
-	@${FIXDEPS} "${OBJECTDIR}/mcc_generated_files/uart4.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
-	
 else
 ${OBJECTDIR}/mcc_generated_files/spi1.o: mcc_generated_files/spi1.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
@@ -346,6 +346,13 @@ ${OBJECTDIR}/mcc_generated_files/uart3.o: mcc_generated_files/uart3.c  nbproject
 	@${RM} ${OBJECTDIR}/mcc_generated_files/uart3.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  mcc_generated_files/uart3.c  -o ${OBJECTDIR}/mcc_generated_files/uart3.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/mcc_generated_files/uart3.o.d"      -mno-eds-warn  -g -omf=elf -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off  
 	@${FIXDEPS} "${OBJECTDIR}/mcc_generated_files/uart3.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
+	
+${OBJECTDIR}/mcc_generated_files/uart4.o: mcc_generated_files/uart4.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/uart4.o.d 
+	@${RM} ${OBJECTDIR}/mcc_generated_files/uart4.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  mcc_generated_files/uart4.c  -o ${OBJECTDIR}/mcc_generated_files/uart4.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/mcc_generated_files/uart4.o.d"      -mno-eds-warn  -g -omf=elf -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off  
+	@${FIXDEPS} "${OBJECTDIR}/mcc_generated_files/uart4.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
 ${OBJECTDIR}/main.o: main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
@@ -451,13 +458,6 @@ ${OBJECTDIR}/KeypadThread.o: KeypadThread.c  nbproject/Makefile-${CND_CONF}.mk
 	@${RM} ${OBJECTDIR}/KeypadThread.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  KeypadThread.c  -o ${OBJECTDIR}/KeypadThread.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/KeypadThread.o.d"      -mno-eds-warn  -g -omf=elf -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off  
 	@${FIXDEPS} "${OBJECTDIR}/KeypadThread.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
-	
-${OBJECTDIR}/mcc_generated_files/uart4.o: mcc_generated_files/uart4.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/uart4.o.d 
-	@${RM} ${OBJECTDIR}/mcc_generated_files/uart4.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  mcc_generated_files/uart4.c  -o ${OBJECTDIR}/mcc_generated_files/uart4.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/mcc_generated_files/uart4.o.d"      -mno-eds-warn  -g -omf=elf -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off  
-	@${FIXDEPS} "${OBJECTDIR}/mcc_generated_files/uart4.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
 endif
 

@@ -26,6 +26,7 @@ Command:
   build/default/production/mcc_generated_files/tmr2.o \
   build/default/production/mcc_generated_files/uart2.o \
   build/default/production/mcc_generated_files/uart3.o \
+  build/default/production/mcc_generated_files/uart4.o \
   build/default/production/main.o \
   build/default/production/leds.o \
   build/default/production/lcd.o \
@@ -41,7 +42,6 @@ Command:
   build/default/production/dataflashSQI.o \
   build/default/production/resources.o \
   build/default/production/KeypadThread.o \
-  build/default/production/mcc_generated_files/uart4.o \
   --local-stack \
   --defsym=__MPLAB_BUILD=1 \
   -Tp24FJ1024GB610.gld.00 \
@@ -237,9 +237,9 @@ section                    address   length (PC units)   length (bytes) (dec)
 .const                      0x2776               0x11c           0x1aa  (426)
 .text                       0x2892              0x28c2          0x3d23  (15651)
 .dinit                      0x5154               0x1dc           0x2ca  (714)
-.text                       0x5330               0x95c           0xe0a  (3594)
+.text                       0x5330               0x9a0           0xe70  (3696)
 
-                 Total program memory used (bytes):         0x8952  (35154) 3%
+                 Total program memory used (bytes):         0x89b8  (35256) 3%
 
 
 Ivt Memory  [Origin = 0x4, Length = 0xfc]
@@ -325,10 +325,10 @@ External Symbols in Data Memory (by address):
                     0x084a                  _UART2_RxDefaultInterruptHandler
                     0x084c                  _UART3_TxDefaultInterruptHandler
                     0x084e                  _UART3_RxDefaultInterruptHandler
-                    0x0850                  _MessageSent
-                    0x0858                  _nvBackupStatus
-                    0x085c                  _UART4_TxDefaultInterruptHandler
-                    0x085e                  _UART4_RxDefaultInterruptHandler
+                    0x0850                  _UART4_TxDefaultInterruptHandler
+                    0x0852                  _UART4_RxDefaultInterruptHandler
+                    0x0854                  _MessageSent
+                    0x085c                  _nvBackupStatus
                     0x0866                  _sFlashPageSize
                     0x0868                  _rf_msg
                     0x08b4                  _readAccumulator
@@ -357,7 +357,7 @@ External Symbols in Data Memory (by address):
 
 External Symbols in Data Memory (by name):
 
-                    0x0850                  _MessageSent
+                    0x0854                  _MessageSent
                     0x2c8b                  _MotionList
                     0x0807                  _PnlTxQinx
                     0x0808                  _PnlTxQoutx
@@ -366,8 +366,8 @@ External Symbols in Data Memory (by name):
                     0x0848                  _UART2_TxDefaultInterruptHandler
                     0x084e                  _UART3_RxDefaultInterruptHandler
                     0x084c                  _UART3_TxDefaultInterruptHandler
-                    0x085e                  _UART4_RxDefaultInterruptHandler
-                    0x085c                  _UART4_TxDefaultInterruptHandler
+                    0x0852                  _UART4_RxDefaultInterruptHandler
+                    0x0850                  _UART4_TxDefaultInterruptHandler
                     0x081e                  _XXX
                     0x319a                  __Aldata
                     0x3008                  __Files
@@ -392,7 +392,7 @@ External Symbols in Data Memory (by name):
                     0x0800                  _index
                     0x3194                  _mfgData
                     0x0806                  _number_of_blocks
-                    0x0858                  _nvBackupStatus
+                    0x085c                  _nvBackupStatus
                     0x26ce                  _nvData
                     0x080a                  _passcount
                     0x2bf0                  _protest_info
@@ -420,8 +420,8 @@ External Symbols in Program Memory (by address):
 
                   0x000100                  __resetPRI
                   0x00013c                  __psv_init
-                  0x000152                  __data_init
                   0x000152                  __data_init_da
+                  0x000152                  __data_init
                   0x000244                  __MI2C1Interrupt
                   0x000496                  __T3Interrupt
                   0x0004c4                  __T2Interrupt
@@ -476,8 +476,8 @@ External Symbols in Program Memory (by address):
                   0x001d30                  __Genld
                   0x001f94                  __Getmem
                   0x001fa8                  _div
-                  0x001fc6                  ___ledf2
                   0x001fc6                  ___eqdf2
+                  0x001fc6                  ___ledf2
                   0x001fc6                  ___ltdf2
                   0x001fd0                  ___gtdf2
                   0x001fd0                  ___gedf2
@@ -495,8 +495,8 @@ External Symbols in Program Memory (by address):
                   0x0022e8                  ___subdf3
                   0x0022ec                  ___udivsi3
                   0x00230c                  ___umodsi3
-                  0x002312                  ___mulp32eds3
                   0x002312                  ___mulp32peds3
+                  0x002312                  ___mulp32eds3
                   0x002312                  ___mulsi3
                   0x00236a                  ___udivmoddi3
                   0x002450                  ___udivdi3
@@ -672,53 +672,57 @@ External Symbols in Program Memory (by address):
                   0x00567c                  _UI_message_get
                   0x005686                  _UI_message_init
                   0x005694                  build/default/production/UIthread.o:_UI_thread
-                  0x0057a2                  _message_Q_initialize
-                  0x0057ca                  _message_Q_put
-                  0x00580c                  _message_Q_get
-                  0x005854                  _message_Q_status
-                  0x00586e                  _PIN_MANAGER_Initialize
-                  0x005930                  _BUTTON_IsPressed
-                  0x00599c                  _BUTTON_Enable
-                  0x0059d4                  _TMR3_Initialize
-                  0x0059ee                  _TMR3_Period16BitSet
-                  0x005a00                  _TMR3_Period16BitGet
-                  0x005a08                  _TMR3_Counter16BitSet
-                  0x005a1a                  _TMR3_Counter16BitGet
-                  0x005a2a                  _TMR3_Start
-                  0x005a3a                  _TMR3_Stop
-                  0x005a44                  _TMR3_GetElapsedThenClear
-                  0x005a5c                  _TMR3_SoftwareCounterGet
-                  0x005a68                  _TMR3_SoftwareCounterClear
-                  0x005a74                  _TMR2_Initialize
-                  0x005a8e                  _TMR2_Period16BitSet
-                  0x005aa0                  _TMR2_Period16BitGet
-                  0x005aa8                  _TMR2_Counter16BitSet
-                  0x005aba                  _TMR2_Counter16BitGet
-                  0x005ac8                  _TMR2_Start
-                  0x005ad8                  _TMR2_Stop
-                  0x005ae2                  _TMR2_GetElapsedThenClear
-                  0x005afa                  _TMR2_SoftwareCounterGet
-                  0x005b06                  _TMR2_SoftwareCounterClear
-                  0x005b12                  _INTERRUPT_Initialize
-                  0x005b86                  _UART1_Initialize
-                  0x005b9e                  _UART1_Read
-                  0x005bbc                  _UART1_Write
-                  0x005bd4                  _UART1_StatusGet
-                  0x005bdc                  _SYSTEM_Initialize
-                  0x005bf4                  _OSCILLATOR_Initialize
-                  0x005c1e                  _Keypad_thread_init
-                  0x005c2e                  _Keypad_message_put
-                  0x005c3c                  _Keypad_message_get
-                  0x005c46                  _Keypad_message_init
-                  0x005c54                  build/default/production/KeypadThread.o:_Keypad_thread
-                  0x005c5a                  _getPanelData
-                  0x005c76                  _setPanelData
+                  0x0057a2                  _TMR3_Initialize
+                  0x0057bc                  _TMR3_Period16BitSet
+                  0x0057ce                  _TMR3_Period16BitGet
+                  0x0057d6                  _TMR3_Counter16BitSet
+                  0x0057e8                  _TMR3_Counter16BitGet
+                  0x0057f8                  _TMR3_Start
+                  0x005808                  _TMR3_Stop
+                  0x005812                  _TMR3_GetElapsedThenClear
+                  0x00582a                  _TMR3_SoftwareCounterGet
+                  0x005836                  _TMR3_SoftwareCounterClear
+                  0x005842                  _timers_seconds_get
+                  0x005854                  _timers_seconds_elapsed
+                  0x00586a                  _timers_milliseconds_elapsed
+                  0x00587a                  _timers_milliseconds_get
+                  0x005886                  _message_Q_initialize
+                  0x0058ae                  _message_Q_put
+                  0x0058f0                  _message_Q_get
+                  0x005938                  _message_Q_status
+                  0x005952                  _PIN_MANAGER_Initialize
+                  0x005a14                  _BUTTON_IsPressed
+                  0x005a80                  _BUTTON_Enable
+                  0x005ab8                  _TMR2_Initialize
+                  0x005ad2                  _TMR2_Period16BitSet
+                  0x005ae4                  _TMR2_Period16BitGet
+                  0x005aec                  _TMR2_Counter16BitSet
+                  0x005afe                  _TMR2_Counter16BitGet
+                  0x005b0c                  _TMR2_Start
+                  0x005b1c                  _TMR2_Stop
+                  0x005b26                  _TMR2_GetElapsedThenClear
+                  0x005b3e                  _TMR2_SoftwareCounterGet
+                  0x005b4a                  _TMR2_SoftwareCounterClear
+                  0x005b56                  _INTERRUPT_Initialize
+                  0x005bca                  _UART1_Initialize
+                  0x005be2                  _UART1_Read
+                  0x005c00                  _UART1_Write
+                  0x005c18                  _UART1_StatusGet
+                  0x005c20                  _SYSTEM_Initialize
+                  0x005c38                  _OSCILLATOR_Initialize
+                  0x005c62                  _Keypad_thread_init
+                  0x005c72                  _Keypad_message_put
+                  0x005c80                  _Keypad_message_get
+                  0x005c8a                  _Keypad_message_init
+                  0x005c98                  build/default/production/KeypadThread.o:_Keypad_thread
+                  0x005c9e                  _getPanelData
+                  0x005cba                  _setPanelData
                   0x0abf00                  __FSEC.sec
 
 External Symbols in Program Memory (by name):
 
-                  0x00599c                  _BUTTON_Enable
-                  0x005930                  _BUTTON_IsPressed
+                  0x005a80                  _BUTTON_Enable
+                  0x005a14                  _BUTTON_IsPressed
                   0x003260                  _CE_High
                   0x00534e                  _DebugMessage_message_get
                   0x005358                  _DebugMessage_message_init
@@ -733,12 +737,12 @@ External Symbols in Program Memory (by name):
                   0x005054                  _I2C1_MasterTRBInsert
                   0x004ff0                  _I2C1_MasterWrite
                   0x0050fe                  _I2C1_MasterWriteTRBBuild
-                  0x005b12                  _INTERRUPT_Initialize
+                  0x005b56                  _INTERRUPT_Initialize
                   0x003c66                  _InitSensorQue
-                  0x005c3c                  _Keypad_message_get
-                  0x005c46                  _Keypad_message_init
-                  0x005c2e                  _Keypad_message_put
-                  0x005c1e                  _Keypad_thread_init
+                  0x005c80                  _Keypad_message_get
+                  0x005c8a                  _Keypad_message_init
+                  0x005c72                  _Keypad_message_put
+                  0x005c62                  _Keypad_thread_init
                   0x004c08                  _LCD_ClearScreen
                   0x004cfa                  _LCD_CursorEnable
                   0x004b0a                  _LCD_Initialize
@@ -749,8 +753,8 @@ External Symbols in Program Memory (by name):
                   0x0045ee                  _LED_Off
                   0x00459c                  _LED_On
                   0x004640                  _LED_Toggle
-                  0x005bf4                  _OSCILLATOR_Initialize
-                  0x00586e                  _PIN_MANAGER_Initialize
+                  0x005c38                  _OSCILLATOR_Initialize
+                  0x005952                  _PIN_MANAGER_Initialize
                   0x005514                  _SPI1_Exchange
                   0x00560e                  _SPI1_Exchange8bit
                   0x00561e                  _SPI1_Exchange8bitBuffer
@@ -758,31 +762,31 @@ External Symbols in Program Memory (by name):
                   0x0054fa                  _SPI1_Initialize
                   0x005656                  _SPI1_StatusGet
                   0x005632                  _SPI1_TransferModeGet
-                  0x005bdc                  _SYSTEM_Initialize
-                  0x005aba                  _TMR2_Counter16BitGet
-                  0x005aa8                  _TMR2_Counter16BitSet
-                  0x005ae2                  _TMR2_GetElapsedThenClear
-                  0x005a74                  _TMR2_Initialize
-                  0x005aa0                  _TMR2_Period16BitGet
-                  0x005a8e                  _TMR2_Period16BitSet
-                  0x005b06                  _TMR2_SoftwareCounterClear
-                  0x005afa                  _TMR2_SoftwareCounterGet
-                  0x005ac8                  _TMR2_Start
-                  0x005ad8                  _TMR2_Stop
-                  0x005a1a                  _TMR3_Counter16BitGet
-                  0x005a08                  _TMR3_Counter16BitSet
-                  0x005a44                  _TMR3_GetElapsedThenClear
-                  0x0059d4                  _TMR3_Initialize
-                  0x005a00                  _TMR3_Period16BitGet
-                  0x0059ee                  _TMR3_Period16BitSet
-                  0x005a68                  _TMR3_SoftwareCounterClear
-                  0x005a5c                  _TMR3_SoftwareCounterGet
-                  0x005a2a                  _TMR3_Start
-                  0x005a3a                  _TMR3_Stop
-                  0x005b86                  _UART1_Initialize
-                  0x005b9e                  _UART1_Read
-                  0x005bd4                  _UART1_StatusGet
-                  0x005bbc                  _UART1_Write
+                  0x005c20                  _SYSTEM_Initialize
+                  0x005afe                  _TMR2_Counter16BitGet
+                  0x005aec                  _TMR2_Counter16BitSet
+                  0x005b26                  _TMR2_GetElapsedThenClear
+                  0x005ab8                  _TMR2_Initialize
+                  0x005ae4                  _TMR2_Period16BitGet
+                  0x005ad2                  _TMR2_Period16BitSet
+                  0x005b4a                  _TMR2_SoftwareCounterClear
+                  0x005b3e                  _TMR2_SoftwareCounterGet
+                  0x005b0c                  _TMR2_Start
+                  0x005b1c                  _TMR2_Stop
+                  0x0057e8                  _TMR3_Counter16BitGet
+                  0x0057d6                  _TMR3_Counter16BitSet
+                  0x005812                  _TMR3_GetElapsedThenClear
+                  0x0057a2                  _TMR3_Initialize
+                  0x0057ce                  _TMR3_Period16BitGet
+                  0x0057bc                  _TMR3_Period16BitSet
+                  0x005836                  _TMR3_SoftwareCounterClear
+                  0x00582a                  _TMR3_SoftwareCounterGet
+                  0x0057f8                  _TMR3_Start
+                  0x005808                  _TMR3_Stop
+                  0x005bca                  _UART1_Initialize
+                  0x005be2                  _UART1_Read
+                  0x005c18                  _UART1_StatusGet
+                  0x005c00                  _UART1_Write
                   0x003cd8                  _UART2_Initialize
                   0x003ee6                  _UART2_Peek
                   0x003dd4                  _UART2_Read
@@ -928,7 +932,7 @@ External Symbols in Program Memory (by name):
                   0x000b70                  _fputc
                   0x001c12                  _free
                   0x001008                  _fwrite
-                  0x005c5a                  _getPanelData
+                  0x005c9e                  _getPanelData
                   0x003a3e                  _get_ac_status
                   0x0039ae                  _get_arming_lvl
                   0x003a0a                  _get_audio_volume
@@ -946,10 +950,10 @@ External Symbols in Program Memory (by name):
                   0x0010b0                  _memchr
                   0x0010c4                  _memcpy
                   0x0006aa                  _memset
-                  0x00580c                  _message_Q_get
-                  0x0057a2                  _message_Q_initialize
-                  0x0057ca                  _message_Q_put
-                  0x005854                  _message_Q_status
+                  0x0058f0                  _message_Q_get
+                  0x005886                  _message_Q_initialize
+                  0x0058ae                  _message_Q_put
+                  0x005938                  _message_Q_status
                   0x003968                  _mfgCopyToFlash
                   0x00396e                  _mfgRestoreFromFlash
                   0x00398a                  _nvIntegrity
@@ -974,7 +978,7 @@ External Symbols in Program Memory (by name):
                   0x005488                  _sendCRLF
                   0x003ca6                  _sendDisplayVersion
                   0x00539a                  _sendText
-                  0x005c76                  _setPanelData
+                  0x005cba                  _setPanelData
                   0x003aba                  _set_ac_trouble
                   0x003992                  _set_arming_lvl
                   0x003ad6                  _set_battery_trouble
@@ -998,13 +1002,17 @@ External Symbols in Program Memory (by name):
                   0x003892                  _thread_create
                   0x003788                  _thread_wait
                   0x003920                  _threads_initialize
+                  0x00586a                  _timers_milliseconds_elapsed
+                  0x00587a                  _timers_milliseconds_get
+                  0x005854                  _timers_seconds_elapsed
+                  0x005842                  _timers_seconds_get
                   0x0035de                  _update_thread_timer
                   0x00397a                  _vInit
                   0x002e48                  _waitForPanelSerialChannel
                   0x000654                  _write
                   0x002c14                  _writePanelData
                   0x003974                  _xInit
-                  0x005c54                  build/default/production/KeypadThread.o:_Keypad_thread
+                  0x005c98                  build/default/production/KeypadThread.o:_Keypad_thread
                   0x00382c                  build/default/production/TouchscreenFiles/threads.o:_timer_thread_func
                   0x005694                  build/default/production/UIthread.o:_UI_thread
                   0x005366                  build/default/production/debugMessages.o:_DebugMessage_thread
@@ -1046,6 +1054,7 @@ LOAD build/default/production/mcc_generated_files/tmr3.o
 LOAD build/default/production/mcc_generated_files/tmr2.o
 LOAD build/default/production/mcc_generated_files/uart2.o
 LOAD build/default/production/mcc_generated_files/uart3.o
+LOAD build/default/production/mcc_generated_files/uart4.o
 LOAD build/default/production/main.o
 LOAD build/default/production/leds.o
 LOAD build/default/production/lcd.o
@@ -1061,7 +1070,6 @@ LOAD build/default/production/sys_variables.o
 LOAD build/default/production/dataflashSQI.o
 LOAD build/default/production/resources.o
 LOAD build/default/production/KeypadThread.o
-LOAD build/default/production/mcc_generated_files/uart4.o
                     0x0001                  __MPLAB_BUILD = 0x1
 LOAD pPIC24Fxxx
 LOAD c:/program files (x86)/microchip/xc16/v1.33/bin/bin/../../lib\libfx-elf.a
@@ -1350,7 +1358,7 @@ __FDEVOPT1
  *(.comment)
  .comment         0x000000         0x5e c:/program files (x86)/microchip/xc16/v1.33/bin/bin/../../lib\liblega-c-elf.a(xfiles.DA_eo)
 
-.debug_info       0x000000      0x30437
+.debug_info       0x000000      0x3050b
  *(.debug_info)
  .debug_info      0x000000        0x915 build/default/production/mcc_generated_files/spi1.o
  .debug_info      0x000915        0x864 build/default/production/mcc_generated_files/pin_manager.o
@@ -1358,26 +1366,26 @@ __FDEVOPT1
  .debug_info      0x00188a       0x10c6 build/default/production/mcc_generated_files/i2c1.o
  .debug_info      0x002950        0x2d0 build/default/production/mcc_generated_files/mcc.o
  .debug_info      0x002c20        0xd59 build/default/production/mcc_generated_files/interrupt_manager.o
- .debug_info      0x003979        0x8b4 build/default/production/mcc_generated_files/tmr3.o
- .debug_info      0x00422d        0x8d1 build/default/production/mcc_generated_files/tmr2.o
- .debug_info      0x004afe       0x1113 build/default/production/mcc_generated_files/uart2.o
- .debug_info      0x005c11        0xfbd build/default/production/mcc_generated_files/uart3.o
- .debug_info      0x006bce       0x435f build/default/production/main.o
- .debug_info      0x00af2d        0x4fd build/default/production/leds.o
- .debug_info      0x00b42a        0xac4 build/default/production/lcd.o
- .debug_info      0x00beee        0x171 build/default/production/lcd_printf.o
- .debug_info      0x00c05f       0x5a06 build/default/production/pnlComm.o
- .debug_info      0x011a65       0x4715 build/default/production/debugMessages.o
- .debug_info      0x01617a        0x880 build/default/production/buttons.o
- .debug_info      0x0169fa       0x3bc7 build/default/production/TouchscreenFiles/queue.o
- .debug_info      0x01a5c1        0x686 build/default/production/TouchscreenFiles/threads.o
- .debug_info      0x01ac47       0x4594 build/default/production/UIthread.o
- .debug_info      0x01f1db       0x5025 build/default/production/statusmanager.o
- .debug_info      0x024200       0x62e0 build/default/production/sys_variables.o
- .debug_info      0x02a4e0        0x785 build/default/production/dataflashSQI.o
- .debug_info      0x02ac65        0x43f build/default/production/resources.o
- .debug_info      0x02b0a4       0x43d6 build/default/production/KeypadThread.o
- .debug_info      0x02f47a        0xfbd build/default/production/mcc_generated_files/uart4.o
+ .debug_info      0x003979        0x988 build/default/production/mcc_generated_files/tmr3.o
+ .debug_info      0x004301        0x8d1 build/default/production/mcc_generated_files/tmr2.o
+ .debug_info      0x004bd2       0x1113 build/default/production/mcc_generated_files/uart2.o
+ .debug_info      0x005ce5        0xfbd build/default/production/mcc_generated_files/uart3.o
+ .debug_info      0x006ca2        0xfbd build/default/production/mcc_generated_files/uart4.o
+ .debug_info      0x007c5f       0x435f build/default/production/main.o
+ .debug_info      0x00bfbe        0x4fd build/default/production/leds.o
+ .debug_info      0x00c4bb        0xac4 build/default/production/lcd.o
+ .debug_info      0x00cf7f        0x171 build/default/production/lcd_printf.o
+ .debug_info      0x00d0f0       0x5a06 build/default/production/pnlComm.o
+ .debug_info      0x012af6       0x4715 build/default/production/debugMessages.o
+ .debug_info      0x01720b        0x880 build/default/production/buttons.o
+ .debug_info      0x017a8b       0x3bc7 build/default/production/TouchscreenFiles/queue.o
+ .debug_info      0x01b652        0x686 build/default/production/TouchscreenFiles/threads.o
+ .debug_info      0x01bcd8       0x4594 build/default/production/UIthread.o
+ .debug_info      0x02026c       0x5025 build/default/production/statusmanager.o
+ .debug_info      0x025291       0x62e0 build/default/production/sys_variables.o
+ .debug_info      0x02b571        0x785 build/default/production/dataflashSQI.o
+ .debug_info      0x02bcf6        0x43f build/default/production/resources.o
+ .debug_info      0x02c135       0x43d6 build/default/production/KeypadThread.o
  *(.gnu.linkonce.wi.*)
 
 .debug_abbrev     0x000000       0x2cd8
@@ -1392,24 +1400,24 @@ __FDEVOPT1
  .debug_abbrev    0x0007cb        0x181 build/default/production/mcc_generated_files/tmr2.o
  .debug_abbrev    0x00094c        0x21a build/default/production/mcc_generated_files/uart2.o
  .debug_abbrev    0x000b66        0x20b build/default/production/mcc_generated_files/uart3.o
- .debug_abbrev    0x000d71        0x21e build/default/production/main.o
- .debug_abbrev    0x000f8f         0xf0 build/default/production/leds.o
- .debug_abbrev    0x00107f        0x14d build/default/production/lcd.o
- .debug_abbrev    0x0011cc         0x4e build/default/production/lcd_printf.o
- .debug_abbrev    0x00121a        0x39e build/default/production/pnlComm.o
- .debug_abbrev    0x0015b8        0x2a9 build/default/production/debugMessages.o
- .debug_abbrev    0x001861         0xca build/default/production/buttons.o
- .debug_abbrev    0x00192b        0x221 build/default/production/TouchscreenFiles/queue.o
- .debug_abbrev    0x001b4c        0x1e9 build/default/production/TouchscreenFiles/threads.o
- .debug_abbrev    0x001d35        0x283 build/default/production/UIthread.o
- .debug_abbrev    0x001fb8        0x2ea build/default/production/statusmanager.o
- .debug_abbrev    0x0022a2        0x309 build/default/production/sys_variables.o
- .debug_abbrev    0x0025ab        0x192 build/default/production/dataflashSQI.o
- .debug_abbrev    0x00273d        0x130 build/default/production/resources.o
- .debug_abbrev    0x00286d        0x260 build/default/production/KeypadThread.o
- .debug_abbrev    0x002acd        0x20b build/default/production/mcc_generated_files/uart4.o
+ .debug_abbrev    0x000d71        0x20b build/default/production/mcc_generated_files/uart4.o
+ .debug_abbrev    0x000f7c        0x21e build/default/production/main.o
+ .debug_abbrev    0x00119a         0xf0 build/default/production/leds.o
+ .debug_abbrev    0x00128a        0x14d build/default/production/lcd.o
+ .debug_abbrev    0x0013d7         0x4e build/default/production/lcd_printf.o
+ .debug_abbrev    0x001425        0x39e build/default/production/pnlComm.o
+ .debug_abbrev    0x0017c3        0x2a9 build/default/production/debugMessages.o
+ .debug_abbrev    0x001a6c         0xca build/default/production/buttons.o
+ .debug_abbrev    0x001b36        0x221 build/default/production/TouchscreenFiles/queue.o
+ .debug_abbrev    0x001d57        0x1e9 build/default/production/TouchscreenFiles/threads.o
+ .debug_abbrev    0x001f40        0x283 build/default/production/UIthread.o
+ .debug_abbrev    0x0021c3        0x2ea build/default/production/statusmanager.o
+ .debug_abbrev    0x0024ad        0x309 build/default/production/sys_variables.o
+ .debug_abbrev    0x0027b6        0x192 build/default/production/dataflashSQI.o
+ .debug_abbrev    0x002948        0x130 build/default/production/resources.o
+ .debug_abbrev    0x002a78        0x260 build/default/production/KeypadThread.o
 
-.debug_line       0x000000       0x22ff
+.debug_line       0x000000       0x230d
  *(.debug_line)
  .debug_line      0x000000        0x156 build/default/production/mcc_generated_files/spi1.o
  .debug_line      0x000156        0x135 build/default/production/mcc_generated_files/pin_manager.o
@@ -1417,28 +1425,28 @@ __FDEVOPT1
  .debug_line      0x0003a6        0x1ec build/default/production/mcc_generated_files/i2c1.o
  .debug_line      0x000592        0x111 build/default/production/mcc_generated_files/mcc.o
  .debug_line      0x0006a3        0x114 build/default/production/mcc_generated_files/interrupt_manager.o
- .debug_line      0x0007b7        0x141 build/default/production/mcc_generated_files/tmr3.o
- .debug_line      0x0008f8        0x141 build/default/production/mcc_generated_files/tmr2.o
- .debug_line      0x000a39        0x1c1 build/default/production/mcc_generated_files/uart2.o
- .debug_line      0x000bfa        0x1c1 build/default/production/mcc_generated_files/uart3.o
- .debug_line      0x000dbb         0xfa build/default/production/main.o
- .debug_line      0x000eb5        0x18e build/default/production/leds.o
- .debug_line      0x001043        0x192 build/default/production/lcd.o
- .debug_line      0x0011d5         0x3c build/default/production/lcd_printf.o
- .debug_line      0x001211        0x29e build/default/production/pnlComm.o
- .debug_line      0x0014af        0x13c build/default/production/debugMessages.o
- .debug_line      0x0015eb        0x120 build/default/production/buttons.o
- .debug_line      0x00170b         0x9f build/default/production/TouchscreenFiles/queue.o
- .debug_line      0x0017aa        0x16a build/default/production/TouchscreenFiles/threads.o
- .debug_line      0x001914        0x13a build/default/production/UIthread.o
- .debug_line      0x001a4e        0x1ac build/default/production/statusmanager.o
- .debug_line      0x001bfa        0x1c4 build/default/production/sys_variables.o
- .debug_line      0x001dbe        0x1c2 build/default/production/dataflashSQI.o
- .debug_line      0x001f80         0xcd build/default/production/resources.o
- .debug_line      0x00204d         0xf1 build/default/production/KeypadThread.o
- .debug_line      0x00213e        0x1c1 build/default/production/mcc_generated_files/uart4.o
+ .debug_line      0x0007b7        0x14f build/default/production/mcc_generated_files/tmr3.o
+ .debug_line      0x000906        0x141 build/default/production/mcc_generated_files/tmr2.o
+ .debug_line      0x000a47        0x1c1 build/default/production/mcc_generated_files/uart2.o
+ .debug_line      0x000c08        0x1c1 build/default/production/mcc_generated_files/uart3.o
+ .debug_line      0x000dc9        0x1c1 build/default/production/mcc_generated_files/uart4.o
+ .debug_line      0x000f8a         0xfa build/default/production/main.o
+ .debug_line      0x001084        0x18e build/default/production/leds.o
+ .debug_line      0x001212        0x192 build/default/production/lcd.o
+ .debug_line      0x0013a4         0x3c build/default/production/lcd_printf.o
+ .debug_line      0x0013e0        0x29e build/default/production/pnlComm.o
+ .debug_line      0x00167e        0x13c build/default/production/debugMessages.o
+ .debug_line      0x0017ba        0x120 build/default/production/buttons.o
+ .debug_line      0x0018da         0x9f build/default/production/TouchscreenFiles/queue.o
+ .debug_line      0x001979        0x16a build/default/production/TouchscreenFiles/threads.o
+ .debug_line      0x001ae3        0x13a build/default/production/UIthread.o
+ .debug_line      0x001c1d        0x1ac build/default/production/statusmanager.o
+ .debug_line      0x001dc9        0x1c4 build/default/production/sys_variables.o
+ .debug_line      0x001f8d        0x1c2 build/default/production/dataflashSQI.o
+ .debug_line      0x00214f         0xcd build/default/production/resources.o
+ .debug_line      0x00221c         0xf1 build/default/production/KeypadThread.o
 
-.debug_frame      0x000000       0x1f44
+.debug_frame      0x000000       0x1fb4
  *(.debug_frame)
  .debug_frame     0x000000         0xd8 build/default/production/mcc_generated_files/spi1.o
  .debug_frame     0x0000d8         0x30 build/default/production/mcc_generated_files/pin_manager.o
@@ -1446,26 +1454,26 @@ __FDEVOPT1
  .debug_frame     0x00018c        0x188 build/default/production/mcc_generated_files/i2c1.o
  .debug_frame     0x000314         0x4c build/default/production/mcc_generated_files/mcc.o
  .debug_frame     0x000360         0x30 build/default/production/mcc_generated_files/interrupt_manager.o
- .debug_frame     0x000390        0x188 build/default/production/mcc_generated_files/tmr3.o
- .debug_frame     0x000518        0x188 build/default/production/mcc_generated_files/tmr2.o
- .debug_frame     0x0006a0        0x29a build/default/production/mcc_generated_files/uart2.o
- .debug_frame     0x00093a        0x29a build/default/production/mcc_generated_files/uart3.o
- .debug_frame     0x000bd4         0x3e build/default/production/main.o
- .debug_frame     0x000c12         0xa0 build/default/production/leds.o
- .debug_frame     0x000cb2        0x180 build/default/production/lcd.o
- .debug_frame     0x000e32         0x30 build/default/production/lcd_printf.o
- .debug_frame     0x000e62        0x1b8 build/default/production/pnlComm.o
- .debug_frame     0x00101a        0x124 build/default/production/debugMessages.o
- .debug_frame     0x00113e         0x4c build/default/production/buttons.o
- .debug_frame     0x00118a         0x84 build/default/production/TouchscreenFiles/queue.o
- .debug_frame     0x00120e        0x12c build/default/production/TouchscreenFiles/threads.o
- .debug_frame     0x00133a         0xa0 build/default/production/UIthread.o
- .debug_frame     0x0013da         0xd8 build/default/production/statusmanager.o
- .debug_frame     0x0014b2        0x340 build/default/production/sys_variables.o
- .debug_frame     0x0017f2        0x3cc build/default/production/dataflashSQI.o
- .debug_frame     0x001bbe         0x4c build/default/production/resources.o
- .debug_frame     0x001c0a         0xa0 build/default/production/KeypadThread.o
- .debug_frame     0x001caa        0x29a build/default/production/mcc_generated_files/uart4.o
+ .debug_frame     0x000390        0x1f8 build/default/production/mcc_generated_files/tmr3.o
+ .debug_frame     0x000588        0x188 build/default/production/mcc_generated_files/tmr2.o
+ .debug_frame     0x000710        0x29a build/default/production/mcc_generated_files/uart2.o
+ .debug_frame     0x0009aa        0x29a build/default/production/mcc_generated_files/uart3.o
+ .debug_frame     0x000c44        0x29a build/default/production/mcc_generated_files/uart4.o
+ .debug_frame     0x000ede         0x3e build/default/production/main.o
+ .debug_frame     0x000f1c         0xa0 build/default/production/leds.o
+ .debug_frame     0x000fbc        0x180 build/default/production/lcd.o
+ .debug_frame     0x00113c         0x30 build/default/production/lcd_printf.o
+ .debug_frame     0x00116c        0x1b8 build/default/production/pnlComm.o
+ .debug_frame     0x001324        0x124 build/default/production/debugMessages.o
+ .debug_frame     0x001448         0x4c build/default/production/buttons.o
+ .debug_frame     0x001494         0x84 build/default/production/TouchscreenFiles/queue.o
+ .debug_frame     0x001518        0x12c build/default/production/TouchscreenFiles/threads.o
+ .debug_frame     0x001644         0xa0 build/default/production/UIthread.o
+ .debug_frame     0x0016e4         0xd8 build/default/production/statusmanager.o
+ .debug_frame     0x0017bc        0x340 build/default/production/sys_variables.o
+ .debug_frame     0x001afc        0x3cc build/default/production/dataflashSQI.o
+ .debug_frame     0x001ec8         0x4c build/default/production/resources.o
+ .debug_frame     0x001f14         0xa0 build/default/production/KeypadThread.o
 
 .debug_str        0x000000        0xc30
  *(.debug_str)
@@ -1479,21 +1487,21 @@ __FDEVOPT1
  .debug_str       0x0001bc         0x1c build/default/production/mcc_generated_files/tmr2.o
  .debug_str       0x0001d8         0x70 build/default/production/mcc_generated_files/uart2.o
  .debug_str       0x000248         0x67 build/default/production/mcc_generated_files/uart3.o
- .debug_str       0x0002af         0xe5 build/default/production/main.o
- .debug_str       0x000394         0x13 build/default/production/leds.o
- .debug_str       0x0003a7         0x26 build/default/production/lcd.o
- .debug_str       0x0003cd        0x1af build/default/production/pnlComm.o
- .debug_str       0x00057c         0xfc build/default/production/debugMessages.o
- .debug_str       0x000678         0x3a build/default/production/buttons.o
- .debug_str       0x0006b2         0xd1 build/default/production/TouchscreenFiles/queue.o
- .debug_str       0x000783         0x1b build/default/production/TouchscreenFiles/threads.o
- .debug_str       0x00079e         0xd0 build/default/production/UIthread.o
- .debug_str       0x00086e         0xec build/default/production/statusmanager.o
- .debug_str       0x00095a        0x154 build/default/production/sys_variables.o
- .debug_str       0x000aae         0x45 build/default/production/dataflashSQI.o
- .debug_str       0x000af3         0x10 build/default/production/resources.o
- .debug_str       0x000b03         0xc6 build/default/production/KeypadThread.o
- .debug_str       0x000bc9         0x67 build/default/production/mcc_generated_files/uart4.o
+ .debug_str       0x0002af         0x67 build/default/production/mcc_generated_files/uart4.o
+ .debug_str       0x000316         0xe5 build/default/production/main.o
+ .debug_str       0x0003fb         0x13 build/default/production/leds.o
+ .debug_str       0x00040e         0x26 build/default/production/lcd.o
+ .debug_str       0x000434        0x1af build/default/production/pnlComm.o
+ .debug_str       0x0005e3         0xfc build/default/production/debugMessages.o
+ .debug_str       0x0006df         0x3a build/default/production/buttons.o
+ .debug_str       0x000719         0xd1 build/default/production/TouchscreenFiles/queue.o
+ .debug_str       0x0007ea         0x1b build/default/production/TouchscreenFiles/threads.o
+ .debug_str       0x000805         0xd0 build/default/production/UIthread.o
+ .debug_str       0x0008d5         0xec build/default/production/statusmanager.o
+ .debug_str       0x0009c1        0x154 build/default/production/sys_variables.o
+ .debug_str       0x000b15         0x45 build/default/production/dataflashSQI.o
+ .debug_str       0x000b5a         0x10 build/default/production/resources.o
+ .debug_str       0x000b6a         0xc6 build/default/production/KeypadThread.o
 
 .debug_loc
  *(.debug_loc)
@@ -1502,7 +1510,7 @@ __FDEVOPT1
  *(.debug_macinfo)
 
 .debug_pubnames
-                  0x000000       0x1708
+                  0x000000       0x1776
  *(.debug_pubnames)
  .debug_pubnames
                   0x000000         0xae build/default/production/mcc_generated_files/spi1.o
@@ -1517,45 +1525,45 @@ __FDEVOPT1
  .debug_pubnames
                   0x00027a         0x2b build/default/production/mcc_generated_files/interrupt_manager.o
  .debug_pubnames
-                  0x0002a5        0x11f build/default/production/mcc_generated_files/tmr3.o
+                  0x0002a5        0x18d build/default/production/mcc_generated_files/tmr3.o
  .debug_pubnames
-                  0x0003c4        0x11f build/default/production/mcc_generated_files/tmr2.o
+                  0x000432        0x11f build/default/production/mcc_generated_files/tmr2.o
  .debug_pubnames
-                  0x0004e3        0x21e build/default/production/mcc_generated_files/uart2.o
+                  0x000551        0x21e build/default/production/mcc_generated_files/uart2.o
  .debug_pubnames
-                  0x000701        0x21e build/default/production/mcc_generated_files/uart3.o
+                  0x00076f        0x21e build/default/production/mcc_generated_files/uart3.o
  .debug_pubnames
-                  0x00091f         0x46 build/default/production/main.o
+                  0x00098d        0x21e build/default/production/mcc_generated_files/uart4.o
  .debug_pubnames
-                  0x000965         0x53 build/default/production/leds.o
+                  0x000bab         0x46 build/default/production/main.o
  .debug_pubnames
-                  0x0009b8         0x70 build/default/production/lcd.o
+                  0x000bf1         0x53 build/default/production/leds.o
  .debug_pubnames
-                  0x000a28         0x1c build/default/production/lcd_printf.o
+                  0x000c44         0x70 build/default/production/lcd.o
  .debug_pubnames
-                  0x000a44        0x308 build/default/production/pnlComm.o
+                  0x000cb4         0x1c build/default/production/lcd_printf.o
  .debug_pubnames
-                  0x000d4c         0xc5 build/default/production/debugMessages.o
+                  0x000cd0        0x308 build/default/production/pnlComm.o
  .debug_pubnames
-                  0x000e11         0x39 build/default/production/buttons.o
+                  0x000fd8         0xc5 build/default/production/debugMessages.o
  .debug_pubnames
-                  0x000e4a         0x64 build/default/production/TouchscreenFiles/queue.o
+                  0x00109d         0x39 build/default/production/buttons.o
  .debug_pubnames
-                  0x000eae         0xbf build/default/production/TouchscreenFiles/threads.o
+                  0x0010d6         0x64 build/default/production/TouchscreenFiles/queue.o
  .debug_pubnames
-                  0x000f6d         0x5f build/default/production/UIthread.o
+                  0x00113a         0xbf build/default/production/TouchscreenFiles/threads.o
  .debug_pubnames
-                  0x000fcc         0xa9 build/default/production/statusmanager.o
+                  0x0011f9         0x5f build/default/production/UIthread.o
  .debug_pubnames
-                  0x001075        0x2ed build/default/production/sys_variables.o
+                  0x001258         0xa9 build/default/production/statusmanager.o
  .debug_pubnames
-                  0x001362         0xe5 build/default/production/dataflashSQI.o
+                  0x001301        0x2ed build/default/production/sys_variables.o
  .debug_pubnames
-                  0x001447         0x34 build/default/production/resources.o
+                  0x0015ee         0xe5 build/default/production/dataflashSQI.o
  .debug_pubnames
-                  0x00147b         0x6f build/default/production/KeypadThread.o
+                  0x0016d3         0x34 build/default/production/resources.o
  .debug_pubnames
-                  0x0014ea        0x21e build/default/production/mcc_generated_files/uart4.o
+                  0x001707         0x6f build/default/production/KeypadThread.o
 
 .debug_ranges
  *(.debug_ranges)
@@ -1583,37 +1591,37 @@ __FDEVOPT1
  .debug_aranges
                   0x0000d8         0x18 build/default/production/mcc_generated_files/uart3.o
  .debug_aranges
-                  0x0000f0         0x18 build/default/production/main.o
+                  0x0000f0         0x18 build/default/production/mcc_generated_files/uart4.o
  .debug_aranges
-                  0x000108         0x18 build/default/production/leds.o
+                  0x000108         0x18 build/default/production/main.o
  .debug_aranges
-                  0x000120         0x18 build/default/production/lcd.o
+                  0x000120         0x18 build/default/production/leds.o
  .debug_aranges
-                  0x000138         0x20 build/default/production/lcd_printf.o
+                  0x000138         0x18 build/default/production/lcd.o
  .debug_aranges
-                  0x000158         0x18 build/default/production/pnlComm.o
+                  0x000150         0x20 build/default/production/lcd_printf.o
  .debug_aranges
-                  0x000170         0x18 build/default/production/debugMessages.o
+                  0x000170         0x18 build/default/production/pnlComm.o
  .debug_aranges
-                  0x000188         0x18 build/default/production/buttons.o
+                  0x000188         0x18 build/default/production/debugMessages.o
  .debug_aranges
-                  0x0001a0         0x18 build/default/production/TouchscreenFiles/queue.o
+                  0x0001a0         0x18 build/default/production/buttons.o
  .debug_aranges
-                  0x0001b8         0x18 build/default/production/TouchscreenFiles/threads.o
+                  0x0001b8         0x18 build/default/production/TouchscreenFiles/queue.o
  .debug_aranges
-                  0x0001d0         0x18 build/default/production/UIthread.o
+                  0x0001d0         0x18 build/default/production/TouchscreenFiles/threads.o
  .debug_aranges
-                  0x0001e8         0x18 build/default/production/statusmanager.o
+                  0x0001e8         0x18 build/default/production/UIthread.o
  .debug_aranges
-                  0x000200         0x18 build/default/production/sys_variables.o
+                  0x000200         0x18 build/default/production/statusmanager.o
  .debug_aranges
-                  0x000218         0x18 build/default/production/dataflashSQI.o
+                  0x000218         0x18 build/default/production/sys_variables.o
  .debug_aranges
-                  0x000230         0x18 build/default/production/resources.o
+                  0x000230         0x18 build/default/production/dataflashSQI.o
  .debug_aranges
-                  0x000248         0x18 build/default/production/KeypadThread.o
+                  0x000248         0x18 build/default/production/resources.o
  .debug_aranges
-                  0x000260         0x18 build/default/production/mcc_generated_files/uart4.o
+                  0x000260         0x18 build/default/production/KeypadThread.o
                     0x0000                  WREG0 = 0x0
                     0x0000                  _WREG0 = 0x0
                     0x0002                  WREG1 = 0x2
@@ -3743,37 +3751,37 @@ LOAD data_init
  .debug_pubtypes
                   0x0008ed         0xf6 build/default/production/mcc_generated_files/uart3.o
  .debug_pubtypes
-                  0x0009e3        0x52f build/default/production/main.o
+                  0x0009e3         0xf6 build/default/production/mcc_generated_files/uart4.o
  .debug_pubtypes
-                  0x000f12         0x63 build/default/production/leds.o
+                  0x000ad9        0x52f build/default/production/main.o
  .debug_pubtypes
-                  0x000f75         0xb0 build/default/production/lcd.o
+                  0x001008         0x63 build/default/production/leds.o
  .debug_pubtypes
-                  0x001025         0x12 build/default/production/lcd_printf.o
+                  0x00106b         0xb0 build/default/production/lcd.o
  .debug_pubtypes
-                  0x001037        0x624 build/default/production/pnlComm.o
+                  0x00111b         0x12 build/default/production/lcd_printf.o
  .debug_pubtypes
-                  0x00165b        0x580 build/default/production/debugMessages.o
+                  0x00112d        0x624 build/default/production/pnlComm.o
  .debug_pubtypes
-                  0x001bdb         0xe0 build/default/production/buttons.o
+                  0x001751        0x580 build/default/production/debugMessages.o
  .debug_pubtypes
-                  0x001cbb        0x53c build/default/production/TouchscreenFiles/queue.o
+                  0x001cd1         0xe0 build/default/production/buttons.o
  .debug_pubtypes
-                  0x0021f7         0x79 build/default/production/TouchscreenFiles/threads.o
+                  0x001db1        0x53c build/default/production/TouchscreenFiles/queue.o
  .debug_pubtypes
-                  0x002270        0x589 build/default/production/UIthread.o
+                  0x0022ed         0x79 build/default/production/TouchscreenFiles/threads.o
  .debug_pubtypes
-                  0x0027f9        0x613 build/default/production/statusmanager.o
+                  0x002366        0x589 build/default/production/UIthread.o
  .debug_pubtypes
-                  0x002e0c        0x688 build/default/production/sys_variables.o
+                  0x0028ef        0x613 build/default/production/statusmanager.o
  .debug_pubtypes
-                  0x003494         0x2b build/default/production/dataflashSQI.o
+                  0x002f02        0x688 build/default/production/sys_variables.o
  .debug_pubtypes
-                  0x0034bf         0x66 build/default/production/resources.o
+                  0x00358a         0x2b build/default/production/dataflashSQI.o
  .debug_pubtypes
-                  0x003525        0x580 build/default/production/KeypadThread.o
+                  0x0035b5         0x66 build/default/production/resources.o
  .debug_pubtypes
-                  0x003aa5         0xf6 build/default/production/mcc_generated_files/uart4.o
+                  0x00361b        0x580 build/default/production/KeypadThread.o
 
 __c30_signature
                   0x003b9b        0x21c
@@ -3798,37 +3806,37 @@ __c30_signature
  __c30_signature
                   0x003bd1          0x6 build/default/production/mcc_generated_files/uart3.o
  __c30_signature
-                  0x003bd7          0x6 build/default/production/main.o
+                  0x003bd7          0x6 build/default/production/mcc_generated_files/uart4.o
  __c30_signature
-                  0x003bdd          0x6 build/default/production/leds.o
+                  0x003bdd          0x6 build/default/production/main.o
  __c30_signature
-                  0x003be3          0x6 build/default/production/lcd.o
+                  0x003be3          0x6 build/default/production/leds.o
  __c30_signature
-                  0x003be9          0x6 build/default/production/lcd_printf.o
+                  0x003be9          0x6 build/default/production/lcd.o
  __c30_signature
-                  0x003bef          0x6 build/default/production/pnlComm.o
+                  0x003bef          0x6 build/default/production/lcd_printf.o
  __c30_signature
-                  0x003bf5          0x6 build/default/production/debugMessages.o
+                  0x003bf5          0x6 build/default/production/pnlComm.o
  __c30_signature
-                  0x003bfb          0x6 build/default/production/buttons.o
+                  0x003bfb          0x6 build/default/production/debugMessages.o
  __c30_signature
-                  0x003c01          0x6 build/default/production/TouchscreenFiles/queue.o
+                  0x003c01          0x6 build/default/production/buttons.o
  __c30_signature
-                  0x003c07          0x6 build/default/production/TouchscreenFiles/threads.o
+                  0x003c07          0x6 build/default/production/TouchscreenFiles/queue.o
  __c30_signature
-                  0x003c0d          0x6 build/default/production/UIthread.o
+                  0x003c0d          0x6 build/default/production/TouchscreenFiles/threads.o
  __c30_signature
-                  0x003c13          0x6 build/default/production/statusmanager.o
+                  0x003c13          0x6 build/default/production/UIthread.o
  __c30_signature
-                  0x003c19          0x6 build/default/production/sys_variables.o
+                  0x003c19          0x6 build/default/production/statusmanager.o
  __c30_signature
-                  0x003c1f          0x6 build/default/production/dataflashSQI.o
+                  0x003c1f          0x6 build/default/production/sys_variables.o
  __c30_signature
-                  0x003c25          0x6 build/default/production/resources.o
+                  0x003c25          0x6 build/default/production/dataflashSQI.o
  __c30_signature
-                  0x003c2b          0x6 build/default/production/KeypadThread.o
+                  0x003c2b          0x6 build/default/production/resources.o
  __c30_signature
-                  0x003c31          0x6 build/default/production/mcc_generated_files/uart4.o
+                  0x003c31          0x6 build/default/production/KeypadThread.o
  __c30_signature
                   0x003c37          0x6 c:/program files (x86)/microchip/xc16/v1.33/bin/bin/../../lib\liblega-pic30-elf.a(crt0_extended24.o)
  __c30_signature
@@ -3993,14 +4001,14 @@ __c30_signature
  .nbss              0x084c          0x4 build/default/production/mcc_generated_files/uart3.o
                     0x084c                  _UART3_TxDefaultInterruptHandler
                     0x084e                  _UART3_RxDefaultInterruptHandler
- .nbss              0x0850          0x4 build/default/production/main.o
-                    0x0850                  _MessageSent
- .nbss              0x0854          0x4 build/default/production/lcd.o
- .nbss              0x0858          0x4 build/default/production/sys_variables.o
-                    0x0858                  _nvBackupStatus
- .nbss              0x085c          0x4 build/default/production/mcc_generated_files/uart4.o
-                    0x085c                  _UART4_TxDefaultInterruptHandler
-                    0x085e                  _UART4_RxDefaultInterruptHandler
+ .nbss              0x0850          0x4 build/default/production/mcc_generated_files/uart4.o
+                    0x0850                  _UART4_TxDefaultInterruptHandler
+                    0x0852                  _UART4_RxDefaultInterruptHandler
+ .nbss              0x0854          0x4 build/default/production/main.o
+                    0x0854                  _MessageSent
+ .nbss              0x0858          0x4 build/default/production/lcd.o
+ .nbss              0x085c          0x4 build/default/production/sys_variables.o
+                    0x085c                  _nvBackupStatus
 
 .ndata              0x0860          0x2
  .ndata             0x0860          0x2 build/default/production/TouchscreenFiles/threads.o
@@ -4339,7 +4347,7 @@ __c30_signature
 .dinit            0x005154        0x1dc
  .dinit           0x005154        0x1dc data_init
 
-.text             0x005330        0x95c
+.text             0x005330        0x9a0
  .text            0x005330        0x1ca build/default/production/debugMessages.o
                   0x005330                  _DebugMessage_thread_init
                   0x005340                  _DebugMessage_message_put
@@ -4364,56 +4372,60 @@ __c30_signature
                   0x00567c                  _UI_message_get
                   0x005686                  _UI_message_init
                   0x005694                  build/default/production/UIthread.o:_UI_thread
- .text            0x0057a2         0xcc build/default/production/TouchscreenFiles/queue.o
-                  0x0057a2                  _message_Q_initialize
-                  0x0057ca                  _message_Q_put
-                  0x00580c                  _message_Q_get
-                  0x005854                  _message_Q_status
- .text            0x00586e         0xc2 build/default/production/mcc_generated_files/pin_manager.o
-                  0x00586e                  _PIN_MANAGER_Initialize
- .text            0x005930         0xa4 build/default/production/buttons.o
-                  0x005930                  _BUTTON_IsPressed
-                  0x00599c                  _BUTTON_Enable
- .text            0x0059d4         0xa0 build/default/production/mcc_generated_files/tmr3.o
-                  0x0059d4                  _TMR3_Initialize
-                  0x0059ee                  _TMR3_Period16BitSet
-                  0x005a00                  _TMR3_Period16BitGet
-                  0x005a08                  _TMR3_Counter16BitSet
-                  0x005a1a                  _TMR3_Counter16BitGet
-                  0x005a22                  _TMR3_CallBack
-                  0x005a2a                  _TMR3_Start
-                  0x005a3a                  _TMR3_Stop
-                  0x005a44                  _TMR3_GetElapsedThenClear
-                  0x005a5c                  _TMR3_SoftwareCounterGet
-                  0x005a68                  _TMR3_SoftwareCounterClear
- .text            0x005a74         0x9e build/default/production/mcc_generated_files/tmr2.o
-                  0x005a74                  _TMR2_Initialize
-                  0x005a8e                  _TMR2_Period16BitSet
-                  0x005aa0                  _TMR2_Period16BitGet
-                  0x005aa8                  _TMR2_Counter16BitSet
-                  0x005aba                  _TMR2_Counter16BitGet
-                  0x005ac2                  _TMR2_CallBack
-                  0x005ac8                  _TMR2_Start
-                  0x005ad8                  _TMR2_Stop
-                  0x005ae2                  _TMR2_GetElapsedThenClear
-                  0x005afa                  _TMR2_SoftwareCounterGet
-                  0x005b06                  _TMR2_SoftwareCounterClear
- .text            0x005b12         0x74 build/default/production/mcc_generated_files/interrupt_manager.o
-                  0x005b12                  _INTERRUPT_Initialize
- .text            0x005b86         0x56 build/default/production/mcc_generated_files/uart1.o
-                  0x005b86                  _UART1_Initialize
-                  0x005b9e                  _UART1_Read
-                  0x005bbc                  _UART1_Write
-                  0x005bd4                  _UART1_StatusGet
- .text            0x005bdc         0x42 build/default/production/mcc_generated_files/mcc.o
-                  0x005bdc                  _SYSTEM_Initialize
-                  0x005bf4                  _OSCILLATOR_Initialize
- .text            0x005c1e         0x3c build/default/production/KeypadThread.o
-                  0x005c1e                  _Keypad_thread_init
-                  0x005c2e                  _Keypad_message_put
-                  0x005c3c                  _Keypad_message_get
-                  0x005c46                  _Keypad_message_init
-                  0x005c54                  build/default/production/KeypadThread.o:_Keypad_thread
- .text            0x005c5a         0x32 build/default/production/resources.o
-                  0x005c5a                  _getPanelData
-                  0x005c76                  _setPanelData
+ .text            0x0057a2         0xe4 build/default/production/mcc_generated_files/tmr3.o
+                  0x0057a2                  _TMR3_Initialize
+                  0x0057bc                  _TMR3_Period16BitSet
+                  0x0057ce                  _TMR3_Period16BitGet
+                  0x0057d6                  _TMR3_Counter16BitSet
+                  0x0057e8                  _TMR3_Counter16BitGet
+                  0x0057f0                  _TMR3_CallBack
+                  0x0057f8                  _TMR3_Start
+                  0x005808                  _TMR3_Stop
+                  0x005812                  _TMR3_GetElapsedThenClear
+                  0x00582a                  _TMR3_SoftwareCounterGet
+                  0x005836                  _TMR3_SoftwareCounterClear
+                  0x005842                  _timers_seconds_get
+                  0x005854                  _timers_seconds_elapsed
+                  0x00586a                  _timers_milliseconds_elapsed
+                  0x00587a                  _timers_milliseconds_get
+ .text            0x005886         0xcc build/default/production/TouchscreenFiles/queue.o
+                  0x005886                  _message_Q_initialize
+                  0x0058ae                  _message_Q_put
+                  0x0058f0                  _message_Q_get
+                  0x005938                  _message_Q_status
+ .text            0x005952         0xc2 build/default/production/mcc_generated_files/pin_manager.o
+                  0x005952                  _PIN_MANAGER_Initialize
+ .text            0x005a14         0xa4 build/default/production/buttons.o
+                  0x005a14                  _BUTTON_IsPressed
+                  0x005a80                  _BUTTON_Enable
+ .text            0x005ab8         0x9e build/default/production/mcc_generated_files/tmr2.o
+                  0x005ab8                  _TMR2_Initialize
+                  0x005ad2                  _TMR2_Period16BitSet
+                  0x005ae4                  _TMR2_Period16BitGet
+                  0x005aec                  _TMR2_Counter16BitSet
+                  0x005afe                  _TMR2_Counter16BitGet
+                  0x005b06                  _TMR2_CallBack
+                  0x005b0c                  _TMR2_Start
+                  0x005b1c                  _TMR2_Stop
+                  0x005b26                  _TMR2_GetElapsedThenClear
+                  0x005b3e                  _TMR2_SoftwareCounterGet
+                  0x005b4a                  _TMR2_SoftwareCounterClear
+ .text            0x005b56         0x74 build/default/production/mcc_generated_files/interrupt_manager.o
+                  0x005b56                  _INTERRUPT_Initialize
+ .text            0x005bca         0x56 build/default/production/mcc_generated_files/uart1.o
+                  0x005bca                  _UART1_Initialize
+                  0x005be2                  _UART1_Read
+                  0x005c00                  _UART1_Write
+                  0x005c18                  _UART1_StatusGet
+ .text            0x005c20         0x42 build/default/production/mcc_generated_files/mcc.o
+                  0x005c20                  _SYSTEM_Initialize
+                  0x005c38                  _OSCILLATOR_Initialize
+ .text            0x005c62         0x3c build/default/production/KeypadThread.o
+                  0x005c62                  _Keypad_thread_init
+                  0x005c72                  _Keypad_message_put
+                  0x005c80                  _Keypad_message_get
+                  0x005c8a                  _Keypad_message_init
+                  0x005c98                  build/default/production/KeypadThread.o:_Keypad_thread
+ .text            0x005c9e         0x32 build/default/production/resources.o
+                  0x005c9e                  _getPanelData
+                  0x005cba                  _setPanelData
