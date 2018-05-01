@@ -235,11 +235,11 @@ section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
 .text                        0x100              0x2676          0x39b1  (14769)
 .const                      0x2776               0x11c           0x1aa  (426)
-.text                       0x2892              0x2982          0x3e43  (15939)
-.dinit                      0x5214               0x1dc           0x2ca  (714)
-.text                       0x53f0               0x9a0           0xe70  (3696)
+.text                       0x2892              0x2980          0x3e40  (15936)
+.dinit                      0x5212               0x1dc           0x2ca  (714)
+.text                       0x53ee               0x9a0           0xe70  (3696)
 
-                 Total program memory used (bytes):         0x8ad8  (35544) 3%
+                 Total program memory used (bytes):         0x8ad5  (35541) 3%
 
 
 Ivt Memory  [Origin = 0x4, Length = 0xfc]
@@ -516,333 +516,333 @@ External Symbols in Program Memory (by address):
                   0x0028d0                  _pnlComm_message_get
                   0x0028da                  _pnlComm_message_init
                   0x0028e8                  build/default/production/pnlComm.o:_pnlComm_thread
-                  0x002a70                  _calcCrc
-                  0x002ada                  _send100msPing
-                  0x002bd4                  _checkForPanelMessages
-                  0x002c14                  _writePanelData
-                  0x002cda                  _readPanelData
-                  0x002df8                  _receivedSpecifiedPkt
-                  0x002e48                  _got_an_ack
-                  0x002e74                  _waitForPanelSerialChannel
-                  0x002e8e                  _releasePanelSerialChannel
-                  0x002e9c                  _process_stream_packet
-                  0x002f7c                  _flash_setup
-                  0x002fa2                  _flash_page_update
-                  0x003078                  _flash_page_write
-                  0x003128                  _flash_read
-                  0x0031d6                  _flash_setup_read
-                  0x00328c                  _CE_High
-                  0x003398                  _sFlashEraseSectors
-                  0x0033f6                  _flash_write
-                  0x003554                  _sFlashEraseSector
-                  0x00360a                  _update_thread_timer
-                  0x003626                  _semaphore_initialize
-                  0x00363c                  _semaphore_get
-                  0x003726                  _semaphore_put
-                  0x0037b4                  _thread_wait
-                  0x003858                  build/default/production/TouchscreenFiles/threads.o:_timer_thread_func
-                  0x0038be                  _thread_create
-                  0x003920                  _context_switch
-                  0x00394c                  _threads_initialize
-                  0x00398e                  _nvRestoreFromFlash
-                  0x003994                  _mfgCopyToFlash
-                  0x00399a                  _mfgRestoreFromFlash
-                  0x0039a0                  _xInit
-                  0x0039a6                  _vInit
-                  0x0039b6                  _nvIntegrity
-                  0x0039be                  _set_arming_lvl
-                  0x0039da                  _get_arming_lvl
-                  0x0039e6                  _set_chime
-                  0x0039fc                  _set_motionChime
-                  0x003a12                  _get_default_screen
-                  0x003a1c                  _set_brightness
-                  0x003a2c                  _get_brightness
-                  0x003a36                  _get_audio_volume
-                  0x003a50                  _get_beep_volume
-                  0x003a6a                  _get_ac_status
-                  0x003a76                  _get_batt_status
-                  0x003a82                  _set_panel_status
-                  0x003adc                  _set_tstat_schedule
-                  0x003ae6                  _set_ac_trouble
-                  0x003b02                  _set_battery_trouble
-                  0x003b1e                  _check_name_token_range
-                  0x003b9a                  _buffer_stream
-                  0x003c26                  _set_channel_status
-                  0x003c3a                  _get_calibration_settings
-                  0x003c60                  _set_calibration_settings
-                  0x003c92                  _InitSensorQue
-                  0x003cb6                  _get_panel_firmware_version
-                  0x003cd2                  _sendDisplayVersion
-                  0x003d04                  _status_manager_thread_init
-                  0x003d14                  _status_message_put
-                  0x003d22                  _status_message_get
-                  0x003d2c                  _status_manager_message_init
-                  0x003d3a                  _clear_delay_info
-                  0x003d54                  _update_sys_timers
-                  0x003dc6                  build/default/production/statusmanager.o:_status_manager_thread
-                  0x003fee                  _parse_txt_number
-                  0x004046                  _UART2_Initialize
-                  0x004092                  _UART2_SetTxInterruptHandler
-                  0x00409e                  _UART2_Transmit_ISR
-                  0x0040f2                  _UART2_SetRxInterruptHandler
-                  0x0040fe                  _UART2_Receive_ISR
-                  0x004142                  _UART2_Read
-                  0x00417a                  _UART2_ReadBuffer
-                  0x0041ae                  _UART2_Write
-                  0x0041e6                  _UART2_WriteBuffer
-                  0x004218                  _UART2_TransferStatusGet
-                  0x004254                  _UART2_Peek
-                  0x00427c                  _UART2_is_rx_ready
-                  0x0042ae                  _UART2_is_tx_ready
-                  0x0042e2                  _UART2_ReceiveBufferIsEmpty
-                  0x0042fa                  _UART2_TransmitBufferIsFull
-                  0x004312                  _UART2_StatusGet
-                  0x00431a                  _UART2_is_tx_done
-                  0x004332                  _UART3_Initialize
-                  0x00437e                  _UART3_SetTxInterruptHandler
-                  0x00438a                  _UART3_Transmit_ISR
-                  0x0043de                  _UART3_SetRxInterruptHandler
-                  0x0043ea                  _UART3_Receive_ISR
-                  0x00442e                  _UART3_Read
-                  0x004466                  _UART3_ReadBuffer
-                  0x00449a                  _UART3_Write
-                  0x0044d2                  _UART3_WriteBuffer
-                  0x004504                  _UART3_TransferStatusGet
-                  0x004540                  _UART3_Peek
-                  0x004568                  _UART3_is_rx_ready
-                  0x00459a                  _UART3_is_tx_ready
-                  0x0045ce                  _UART3_ReceiveBufferIsEmpty
-                  0x0045e6                  _UART3_TransmitBufferIsFull
-                  0x0045fe                  _UART3_StatusGet
-                  0x004606                  _UART3_is_tx_done
-                  0x00461e                  _UART4_Initialize
-                  0x00466a                  _UART4_SetTxInterruptHandler
-                  0x004676                  _UART4_Transmit_ISR
-                  0x0046ca                  _UART4_SetRxInterruptHandler
-                  0x0046d6                  _UART4_Receive_ISR
-                  0x00471a                  _UART4_Read
-                  0x004752                  _UART4_ReadBuffer
-                  0x004786                  _UART4_Write
-                  0x0047be                  _UART4_WriteBuffer
-                  0x0047f0                  _UART4_TransferStatusGet
-                  0x00482c                  _UART4_Peek
-                  0x004854                  _UART4_is_rx_ready
-                  0x004886                  _UART4_is_tx_ready
-                  0x0048ba                  _UART4_ReceiveBufferIsEmpty
-                  0x0048d2                  _UART4_TransmitBufferIsFull
-                  0x0048ea                  _UART4_StatusGet
-                  0x0048f2                  _UART4_is_tx_done
-                  0x00490a                  _LED_On
-                  0x00495c                  _LED_Off
-                  0x0049ae                  _LED_Toggle
-                  0x004abe                  _LED_Get
-                  0x004b78                  _LED_Enable
-                  0x004bca                  _LCD_Initialize
-                  0x004c0a                  _LCD_PutString
-                  0x004c44                  _LCD_PutChar
-                  0x004cc8                  _LCD_ClearScreen
-                  0x004dba                  _LCD_CursorEnable
-                  0x004e34                  _main
-                  0x00502e                  _I2C1_Initialize
-                  0x005066                  _I2C1_ErrorCountGet
-                  0x0050b0                  _I2C1_MasterWrite
-                  0x0050e2                  _I2C1_MasterRead
-                  0x005114                  _I2C1_MasterTRBInsert
-                  0x00518e                  _I2C1_MasterReadTRBBuild
-                  0x0051be                  _I2C1_MasterWriteTRBBuild
-                  0x0051e2                  _I2C1_MasterQueueIsEmpty
-                  0x0051fc                  _I2C1_MasterQueueIsFull
-                  0x0053f0                  _DebugMessage_thread_init
-                  0x005400                  _DebugMessage_message_put
-                  0x00540e                  _DebugMessage_message_get
-                  0x005418                  _DebugMessage_message_init
-                  0x005426                  build/default/production/debugMessages.o:_DebugMessage_thread
-                  0x00545a                  _sendText
-                  0x0054f8                  _formatHex
-                  0x005548                  _sendCRLF
-                  0x005588                  _buildDebugMessage
-                  0x0055ba                  _SPI1_Initialize
-                  0x0055d4                  _SPI1_Exchange
-                  0x005604                  _SPI1_ExchangeBuffer
-                  0x0056ce                  _SPI1_Exchange8bit
-                  0x0056de                  _SPI1_Exchange8bitBuffer
-                  0x0056f2                  _SPI1_TransferModeGet
-                  0x005716                  _SPI1_StatusGet
-                  0x00571e                  _UI_thread_init
-                  0x00572e                  _UI_message_put
-                  0x00573c                  _UI_message_get
-                  0x005746                  _UI_message_init
-                  0x005754                  build/default/production/UIthread.o:_UI_thread
-                  0x005862                  _TMR3_Initialize
-                  0x00587c                  _TMR3_Period16BitSet
-                  0x00588e                  _TMR3_Period16BitGet
-                  0x005896                  _TMR3_Counter16BitSet
-                  0x0058a8                  _TMR3_Counter16BitGet
-                  0x0058b8                  _TMR3_Start
-                  0x0058c8                  _TMR3_Stop
-                  0x0058d2                  _TMR3_GetElapsedThenClear
-                  0x0058ea                  _TMR3_SoftwareCounterGet
-                  0x0058f6                  _TMR3_SoftwareCounterClear
-                  0x005902                  _timers_seconds_get
-                  0x005914                  _timers_seconds_elapsed
-                  0x00592a                  _timers_milliseconds_elapsed
-                  0x00593a                  _timers_milliseconds_get
-                  0x005946                  _message_Q_initialize
-                  0x00596e                  _message_Q_put
-                  0x0059b0                  _message_Q_get
-                  0x0059f8                  _message_Q_status
-                  0x005a12                  _PIN_MANAGER_Initialize
-                  0x005ad4                  _BUTTON_IsPressed
-                  0x005b40                  _BUTTON_Enable
-                  0x005b78                  _TMR2_Initialize
-                  0x005b92                  _TMR2_Period16BitSet
-                  0x005ba4                  _TMR2_Period16BitGet
-                  0x005bac                  _TMR2_Counter16BitSet
-                  0x005bbe                  _TMR2_Counter16BitGet
-                  0x005bcc                  _TMR2_Start
-                  0x005bdc                  _TMR2_Stop
-                  0x005be6                  _TMR2_GetElapsedThenClear
-                  0x005bfe                  _TMR2_SoftwareCounterGet
-                  0x005c0a                  _TMR2_SoftwareCounterClear
-                  0x005c16                  _INTERRUPT_Initialize
-                  0x005c8a                  _UART1_Initialize
-                  0x005ca2                  _UART1_Read
-                  0x005cc0                  _UART1_Write
-                  0x005cd8                  _UART1_StatusGet
-                  0x005ce0                  _SYSTEM_Initialize
-                  0x005cf8                  _OSCILLATOR_Initialize
-                  0x005d22                  _Keypad_thread_init
-                  0x005d32                  _Keypad_message_put
-                  0x005d40                  _Keypad_message_get
-                  0x005d4a                  _Keypad_message_init
-                  0x005d58                  build/default/production/KeypadThread.o:_Keypad_thread
-                  0x005d5e                  _getPanelData
-                  0x005d7a                  _setPanelData
+                  0x002a6c                  _calcCrc
+                  0x002ad6                  _send100msPing
+                  0x002bd0                  _checkForPanelMessages
+                  0x002c10                  _writePanelData
+                  0x002cd6                  _readPanelData
+                  0x002df4                  _receivedSpecifiedPkt
+                  0x002e44                  _got_an_ack
+                  0x002e70                  _waitForPanelSerialChannel
+                  0x002e8a                  _releasePanelSerialChannel
+                  0x002e98                  _process_stream_packet
+                  0x002f78                  _flash_setup
+                  0x002f9e                  _flash_page_update
+                  0x003074                  _flash_page_write
+                  0x003124                  _flash_read
+                  0x0031d2                  _flash_setup_read
+                  0x003288                  _CE_High
+                  0x003394                  _sFlashEraseSectors
+                  0x0033f2                  _flash_write
+                  0x003550                  _sFlashEraseSector
+                  0x003606                  _update_thread_timer
+                  0x003622                  _semaphore_initialize
+                  0x003638                  _semaphore_get
+                  0x003722                  _semaphore_put
+                  0x0037b0                  _thread_wait
+                  0x003854                  build/default/production/TouchscreenFiles/threads.o:_timer_thread_func
+                  0x0038ba                  _thread_create
+                  0x00391c                  _context_switch
+                  0x003948                  _threads_initialize
+                  0x00398a                  _nvRestoreFromFlash
+                  0x003990                  _mfgCopyToFlash
+                  0x003996                  _mfgRestoreFromFlash
+                  0x00399c                  _xInit
+                  0x0039a2                  _vInit
+                  0x0039b2                  _nvIntegrity
+                  0x0039ba                  _set_arming_lvl
+                  0x0039d6                  _get_arming_lvl
+                  0x0039e2                  _set_chime
+                  0x0039f8                  _set_motionChime
+                  0x003a0e                  _get_default_screen
+                  0x003a18                  _set_brightness
+                  0x003a28                  _get_brightness
+                  0x003a32                  _get_audio_volume
+                  0x003a4c                  _get_beep_volume
+                  0x003a66                  _get_ac_status
+                  0x003a72                  _get_batt_status
+                  0x003a7e                  _set_panel_status
+                  0x003ad8                  _set_tstat_schedule
+                  0x003ae2                  _set_ac_trouble
+                  0x003afe                  _set_battery_trouble
+                  0x003b1a                  _check_name_token_range
+                  0x003b96                  _buffer_stream
+                  0x003c22                  _set_channel_status
+                  0x003c36                  _get_calibration_settings
+                  0x003c5c                  _set_calibration_settings
+                  0x003c8e                  _InitSensorQue
+                  0x003cb2                  _get_panel_firmware_version
+                  0x003cce                  _sendDisplayVersion
+                  0x003d00                  _status_manager_thread_init
+                  0x003d10                  _status_message_put
+                  0x003d1e                  _status_message_get
+                  0x003d28                  _status_manager_message_init
+                  0x003d36                  _clear_delay_info
+                  0x003d50                  _update_sys_timers
+                  0x003dc2                  build/default/production/statusmanager.o:_status_manager_thread
+                  0x003fec                  _parse_txt_number
+                  0x004044                  _UART2_Initialize
+                  0x004090                  _UART2_SetTxInterruptHandler
+                  0x00409c                  _UART2_Transmit_ISR
+                  0x0040f0                  _UART2_SetRxInterruptHandler
+                  0x0040fc                  _UART2_Receive_ISR
+                  0x004140                  _UART2_Read
+                  0x004178                  _UART2_ReadBuffer
+                  0x0041ac                  _UART2_Write
+                  0x0041e4                  _UART2_WriteBuffer
+                  0x004216                  _UART2_TransferStatusGet
+                  0x004252                  _UART2_Peek
+                  0x00427a                  _UART2_is_rx_ready
+                  0x0042ac                  _UART2_is_tx_ready
+                  0x0042e0                  _UART2_ReceiveBufferIsEmpty
+                  0x0042f8                  _UART2_TransmitBufferIsFull
+                  0x004310                  _UART2_StatusGet
+                  0x004318                  _UART2_is_tx_done
+                  0x004330                  _UART3_Initialize
+                  0x00437c                  _UART3_SetTxInterruptHandler
+                  0x004388                  _UART3_Transmit_ISR
+                  0x0043dc                  _UART3_SetRxInterruptHandler
+                  0x0043e8                  _UART3_Receive_ISR
+                  0x00442c                  _UART3_Read
+                  0x004464                  _UART3_ReadBuffer
+                  0x004498                  _UART3_Write
+                  0x0044d0                  _UART3_WriteBuffer
+                  0x004502                  _UART3_TransferStatusGet
+                  0x00453e                  _UART3_Peek
+                  0x004566                  _UART3_is_rx_ready
+                  0x004598                  _UART3_is_tx_ready
+                  0x0045cc                  _UART3_ReceiveBufferIsEmpty
+                  0x0045e4                  _UART3_TransmitBufferIsFull
+                  0x0045fc                  _UART3_StatusGet
+                  0x004604                  _UART3_is_tx_done
+                  0x00461c                  _UART4_Initialize
+                  0x004668                  _UART4_SetTxInterruptHandler
+                  0x004674                  _UART4_Transmit_ISR
+                  0x0046c8                  _UART4_SetRxInterruptHandler
+                  0x0046d4                  _UART4_Receive_ISR
+                  0x004718                  _UART4_Read
+                  0x004750                  _UART4_ReadBuffer
+                  0x004784                  _UART4_Write
+                  0x0047bc                  _UART4_WriteBuffer
+                  0x0047ee                  _UART4_TransferStatusGet
+                  0x00482a                  _UART4_Peek
+                  0x004852                  _UART4_is_rx_ready
+                  0x004884                  _UART4_is_tx_ready
+                  0x0048b8                  _UART4_ReceiveBufferIsEmpty
+                  0x0048d0                  _UART4_TransmitBufferIsFull
+                  0x0048e8                  _UART4_StatusGet
+                  0x0048f0                  _UART4_is_tx_done
+                  0x004908                  _LED_On
+                  0x00495a                  _LED_Off
+                  0x0049ac                  _LED_Toggle
+                  0x004abc                  _LED_Get
+                  0x004b76                  _LED_Enable
+                  0x004bc8                  _LCD_Initialize
+                  0x004c08                  _LCD_PutString
+                  0x004c42                  _LCD_PutChar
+                  0x004cc6                  _LCD_ClearScreen
+                  0x004db8                  _LCD_CursorEnable
+                  0x004e32                  _main
+                  0x00502c                  _I2C1_Initialize
+                  0x005064                  _I2C1_ErrorCountGet
+                  0x0050ae                  _I2C1_MasterWrite
+                  0x0050e0                  _I2C1_MasterRead
+                  0x005112                  _I2C1_MasterTRBInsert
+                  0x00518c                  _I2C1_MasterReadTRBBuild
+                  0x0051bc                  _I2C1_MasterWriteTRBBuild
+                  0x0051e0                  _I2C1_MasterQueueIsEmpty
+                  0x0051fa                  _I2C1_MasterQueueIsFull
+                  0x0053ee                  _DebugMessage_thread_init
+                  0x0053fe                  _DebugMessage_message_put
+                  0x00540c                  _DebugMessage_message_get
+                  0x005416                  _DebugMessage_message_init
+                  0x005424                  build/default/production/debugMessages.o:_DebugMessage_thread
+                  0x005458                  _sendText
+                  0x0054f6                  _formatHex
+                  0x005546                  _sendCRLF
+                  0x005586                  _buildDebugMessage
+                  0x0055b8                  _SPI1_Initialize
+                  0x0055d2                  _SPI1_Exchange
+                  0x005602                  _SPI1_ExchangeBuffer
+                  0x0056cc                  _SPI1_Exchange8bit
+                  0x0056dc                  _SPI1_Exchange8bitBuffer
+                  0x0056f0                  _SPI1_TransferModeGet
+                  0x005714                  _SPI1_StatusGet
+                  0x00571c                  _UI_thread_init
+                  0x00572c                  _UI_message_put
+                  0x00573a                  _UI_message_get
+                  0x005744                  _UI_message_init
+                  0x005752                  build/default/production/UIthread.o:_UI_thread
+                  0x005860                  _TMR3_Initialize
+                  0x00587a                  _TMR3_Period16BitSet
+                  0x00588c                  _TMR3_Period16BitGet
+                  0x005894                  _TMR3_Counter16BitSet
+                  0x0058a6                  _TMR3_Counter16BitGet
+                  0x0058b6                  _TMR3_Start
+                  0x0058c6                  _TMR3_Stop
+                  0x0058d0                  _TMR3_GetElapsedThenClear
+                  0x0058e8                  _TMR3_SoftwareCounterGet
+                  0x0058f4                  _TMR3_SoftwareCounterClear
+                  0x005900                  _timers_seconds_get
+                  0x005912                  _timers_seconds_elapsed
+                  0x005928                  _timers_milliseconds_elapsed
+                  0x005938                  _timers_milliseconds_get
+                  0x005944                  _message_Q_initialize
+                  0x00596c                  _message_Q_put
+                  0x0059ae                  _message_Q_get
+                  0x0059f6                  _message_Q_status
+                  0x005a10                  _PIN_MANAGER_Initialize
+                  0x005ad2                  _BUTTON_IsPressed
+                  0x005b3e                  _BUTTON_Enable
+                  0x005b76                  _TMR2_Initialize
+                  0x005b90                  _TMR2_Period16BitSet
+                  0x005ba2                  _TMR2_Period16BitGet
+                  0x005baa                  _TMR2_Counter16BitSet
+                  0x005bbc                  _TMR2_Counter16BitGet
+                  0x005bca                  _TMR2_Start
+                  0x005bda                  _TMR2_Stop
+                  0x005be4                  _TMR2_GetElapsedThenClear
+                  0x005bfc                  _TMR2_SoftwareCounterGet
+                  0x005c08                  _TMR2_SoftwareCounterClear
+                  0x005c14                  _INTERRUPT_Initialize
+                  0x005c88                  _UART1_Initialize
+                  0x005ca0                  _UART1_Read
+                  0x005cbe                  _UART1_Write
+                  0x005cd6                  _UART1_StatusGet
+                  0x005cde                  _SYSTEM_Initialize
+                  0x005cf6                  _OSCILLATOR_Initialize
+                  0x005d20                  _Keypad_thread_init
+                  0x005d30                  _Keypad_message_put
+                  0x005d3e                  _Keypad_message_get
+                  0x005d48                  _Keypad_message_init
+                  0x005d56                  build/default/production/KeypadThread.o:_Keypad_thread
+                  0x005d5c                  _getPanelData
+                  0x005d78                  _setPanelData
                   0x0abf00                  __FSEC.sec
 
 External Symbols in Program Memory (by name):
 
-                  0x005b40                  _BUTTON_Enable
-                  0x005ad4                  _BUTTON_IsPressed
-                  0x00328c                  _CE_High
-                  0x00540e                  _DebugMessage_message_get
-                  0x005418                  _DebugMessage_message_init
-                  0x005400                  _DebugMessage_message_put
-                  0x0053f0                  _DebugMessage_thread_init
-                  0x005066                  _I2C1_ErrorCountGet
-                  0x00502e                  _I2C1_Initialize
-                  0x0051e2                  _I2C1_MasterQueueIsEmpty
-                  0x0051fc                  _I2C1_MasterQueueIsFull
-                  0x0050e2                  _I2C1_MasterRead
-                  0x00518e                  _I2C1_MasterReadTRBBuild
-                  0x005114                  _I2C1_MasterTRBInsert
-                  0x0050b0                  _I2C1_MasterWrite
-                  0x0051be                  _I2C1_MasterWriteTRBBuild
-                  0x005c16                  _INTERRUPT_Initialize
-                  0x003c92                  _InitSensorQue
-                  0x005d40                  _Keypad_message_get
-                  0x005d4a                  _Keypad_message_init
-                  0x005d32                  _Keypad_message_put
-                  0x005d22                  _Keypad_thread_init
-                  0x004cc8                  _LCD_ClearScreen
-                  0x004dba                  _LCD_CursorEnable
-                  0x004bca                  _LCD_Initialize
-                  0x004c44                  _LCD_PutChar
-                  0x004c0a                  _LCD_PutString
-                  0x004b78                  _LED_Enable
-                  0x004abe                  _LED_Get
-                  0x00495c                  _LED_Off
-                  0x00490a                  _LED_On
-                  0x0049ae                  _LED_Toggle
-                  0x005cf8                  _OSCILLATOR_Initialize
-                  0x005a12                  _PIN_MANAGER_Initialize
-                  0x0055d4                  _SPI1_Exchange
-                  0x0056ce                  _SPI1_Exchange8bit
-                  0x0056de                  _SPI1_Exchange8bitBuffer
-                  0x005604                  _SPI1_ExchangeBuffer
-                  0x0055ba                  _SPI1_Initialize
-                  0x005716                  _SPI1_StatusGet
-                  0x0056f2                  _SPI1_TransferModeGet
-                  0x005ce0                  _SYSTEM_Initialize
-                  0x005bbe                  _TMR2_Counter16BitGet
-                  0x005bac                  _TMR2_Counter16BitSet
-                  0x005be6                  _TMR2_GetElapsedThenClear
-                  0x005b78                  _TMR2_Initialize
-                  0x005ba4                  _TMR2_Period16BitGet
-                  0x005b92                  _TMR2_Period16BitSet
-                  0x005c0a                  _TMR2_SoftwareCounterClear
-                  0x005bfe                  _TMR2_SoftwareCounterGet
-                  0x005bcc                  _TMR2_Start
-                  0x005bdc                  _TMR2_Stop
-                  0x0058a8                  _TMR3_Counter16BitGet
-                  0x005896                  _TMR3_Counter16BitSet
-                  0x0058d2                  _TMR3_GetElapsedThenClear
-                  0x005862                  _TMR3_Initialize
-                  0x00588e                  _TMR3_Period16BitGet
-                  0x00587c                  _TMR3_Period16BitSet
-                  0x0058f6                  _TMR3_SoftwareCounterClear
-                  0x0058ea                  _TMR3_SoftwareCounterGet
-                  0x0058b8                  _TMR3_Start
-                  0x0058c8                  _TMR3_Stop
-                  0x005c8a                  _UART1_Initialize
-                  0x005ca2                  _UART1_Read
-                  0x005cd8                  _UART1_StatusGet
-                  0x005cc0                  _UART1_Write
-                  0x004046                  _UART2_Initialize
-                  0x004254                  _UART2_Peek
-                  0x004142                  _UART2_Read
-                  0x00417a                  _UART2_ReadBuffer
-                  0x0042e2                  _UART2_ReceiveBufferIsEmpty
-                  0x0040fe                  _UART2_Receive_ISR
-                  0x0040f2                  _UART2_SetRxInterruptHandler
-                  0x004092                  _UART2_SetTxInterruptHandler
-                  0x004312                  _UART2_StatusGet
-                  0x004218                  _UART2_TransferStatusGet
-                  0x0042fa                  _UART2_TransmitBufferIsFull
-                  0x00409e                  _UART2_Transmit_ISR
-                  0x0041ae                  _UART2_Write
-                  0x0041e6                  _UART2_WriteBuffer
-                  0x00427c                  _UART2_is_rx_ready
-                  0x00431a                  _UART2_is_tx_done
-                  0x0042ae                  _UART2_is_tx_ready
-                  0x004332                  _UART3_Initialize
-                  0x004540                  _UART3_Peek
-                  0x00442e                  _UART3_Read
-                  0x004466                  _UART3_ReadBuffer
-                  0x0045ce                  _UART3_ReceiveBufferIsEmpty
-                  0x0043ea                  _UART3_Receive_ISR
-                  0x0043de                  _UART3_SetRxInterruptHandler
-                  0x00437e                  _UART3_SetTxInterruptHandler
-                  0x0045fe                  _UART3_StatusGet
-                  0x004504                  _UART3_TransferStatusGet
-                  0x0045e6                  _UART3_TransmitBufferIsFull
-                  0x00438a                  _UART3_Transmit_ISR
-                  0x00449a                  _UART3_Write
-                  0x0044d2                  _UART3_WriteBuffer
-                  0x004568                  _UART3_is_rx_ready
-                  0x004606                  _UART3_is_tx_done
-                  0x00459a                  _UART3_is_tx_ready
-                  0x00461e                  _UART4_Initialize
-                  0x00482c                  _UART4_Peek
-                  0x00471a                  _UART4_Read
-                  0x004752                  _UART4_ReadBuffer
-                  0x0048ba                  _UART4_ReceiveBufferIsEmpty
-                  0x0046d6                  _UART4_Receive_ISR
-                  0x0046ca                  _UART4_SetRxInterruptHandler
-                  0x00466a                  _UART4_SetTxInterruptHandler
-                  0x0048ea                  _UART4_StatusGet
-                  0x0047f0                  _UART4_TransferStatusGet
-                  0x0048d2                  _UART4_TransmitBufferIsFull
-                  0x004676                  _UART4_Transmit_ISR
-                  0x004786                  _UART4_Write
-                  0x0047be                  _UART4_WriteBuffer
-                  0x004854                  _UART4_is_rx_ready
-                  0x0048f2                  _UART4_is_tx_done
-                  0x004886                  _UART4_is_tx_ready
-                  0x00573c                  _UI_message_get
-                  0x005746                  _UI_message_init
-                  0x00572e                  _UI_message_put
-                  0x00571e                  _UI_thread_init
+                  0x005b3e                  _BUTTON_Enable
+                  0x005ad2                  _BUTTON_IsPressed
+                  0x003288                  _CE_High
+                  0x00540c                  _DebugMessage_message_get
+                  0x005416                  _DebugMessage_message_init
+                  0x0053fe                  _DebugMessage_message_put
+                  0x0053ee                  _DebugMessage_thread_init
+                  0x005064                  _I2C1_ErrorCountGet
+                  0x00502c                  _I2C1_Initialize
+                  0x0051e0                  _I2C1_MasterQueueIsEmpty
+                  0x0051fa                  _I2C1_MasterQueueIsFull
+                  0x0050e0                  _I2C1_MasterRead
+                  0x00518c                  _I2C1_MasterReadTRBBuild
+                  0x005112                  _I2C1_MasterTRBInsert
+                  0x0050ae                  _I2C1_MasterWrite
+                  0x0051bc                  _I2C1_MasterWriteTRBBuild
+                  0x005c14                  _INTERRUPT_Initialize
+                  0x003c8e                  _InitSensorQue
+                  0x005d3e                  _Keypad_message_get
+                  0x005d48                  _Keypad_message_init
+                  0x005d30                  _Keypad_message_put
+                  0x005d20                  _Keypad_thread_init
+                  0x004cc6                  _LCD_ClearScreen
+                  0x004db8                  _LCD_CursorEnable
+                  0x004bc8                  _LCD_Initialize
+                  0x004c42                  _LCD_PutChar
+                  0x004c08                  _LCD_PutString
+                  0x004b76                  _LED_Enable
+                  0x004abc                  _LED_Get
+                  0x00495a                  _LED_Off
+                  0x004908                  _LED_On
+                  0x0049ac                  _LED_Toggle
+                  0x005cf6                  _OSCILLATOR_Initialize
+                  0x005a10                  _PIN_MANAGER_Initialize
+                  0x0055d2                  _SPI1_Exchange
+                  0x0056cc                  _SPI1_Exchange8bit
+                  0x0056dc                  _SPI1_Exchange8bitBuffer
+                  0x005602                  _SPI1_ExchangeBuffer
+                  0x0055b8                  _SPI1_Initialize
+                  0x005714                  _SPI1_StatusGet
+                  0x0056f0                  _SPI1_TransferModeGet
+                  0x005cde                  _SYSTEM_Initialize
+                  0x005bbc                  _TMR2_Counter16BitGet
+                  0x005baa                  _TMR2_Counter16BitSet
+                  0x005be4                  _TMR2_GetElapsedThenClear
+                  0x005b76                  _TMR2_Initialize
+                  0x005ba2                  _TMR2_Period16BitGet
+                  0x005b90                  _TMR2_Period16BitSet
+                  0x005c08                  _TMR2_SoftwareCounterClear
+                  0x005bfc                  _TMR2_SoftwareCounterGet
+                  0x005bca                  _TMR2_Start
+                  0x005bda                  _TMR2_Stop
+                  0x0058a6                  _TMR3_Counter16BitGet
+                  0x005894                  _TMR3_Counter16BitSet
+                  0x0058d0                  _TMR3_GetElapsedThenClear
+                  0x005860                  _TMR3_Initialize
+                  0x00588c                  _TMR3_Period16BitGet
+                  0x00587a                  _TMR3_Period16BitSet
+                  0x0058f4                  _TMR3_SoftwareCounterClear
+                  0x0058e8                  _TMR3_SoftwareCounterGet
+                  0x0058b6                  _TMR3_Start
+                  0x0058c6                  _TMR3_Stop
+                  0x005c88                  _UART1_Initialize
+                  0x005ca0                  _UART1_Read
+                  0x005cd6                  _UART1_StatusGet
+                  0x005cbe                  _UART1_Write
+                  0x004044                  _UART2_Initialize
+                  0x004252                  _UART2_Peek
+                  0x004140                  _UART2_Read
+                  0x004178                  _UART2_ReadBuffer
+                  0x0042e0                  _UART2_ReceiveBufferIsEmpty
+                  0x0040fc                  _UART2_Receive_ISR
+                  0x0040f0                  _UART2_SetRxInterruptHandler
+                  0x004090                  _UART2_SetTxInterruptHandler
+                  0x004310                  _UART2_StatusGet
+                  0x004216                  _UART2_TransferStatusGet
+                  0x0042f8                  _UART2_TransmitBufferIsFull
+                  0x00409c                  _UART2_Transmit_ISR
+                  0x0041ac                  _UART2_Write
+                  0x0041e4                  _UART2_WriteBuffer
+                  0x00427a                  _UART2_is_rx_ready
+                  0x004318                  _UART2_is_tx_done
+                  0x0042ac                  _UART2_is_tx_ready
+                  0x004330                  _UART3_Initialize
+                  0x00453e                  _UART3_Peek
+                  0x00442c                  _UART3_Read
+                  0x004464                  _UART3_ReadBuffer
+                  0x0045cc                  _UART3_ReceiveBufferIsEmpty
+                  0x0043e8                  _UART3_Receive_ISR
+                  0x0043dc                  _UART3_SetRxInterruptHandler
+                  0x00437c                  _UART3_SetTxInterruptHandler
+                  0x0045fc                  _UART3_StatusGet
+                  0x004502                  _UART3_TransferStatusGet
+                  0x0045e4                  _UART3_TransmitBufferIsFull
+                  0x004388                  _UART3_Transmit_ISR
+                  0x004498                  _UART3_Write
+                  0x0044d0                  _UART3_WriteBuffer
+                  0x004566                  _UART3_is_rx_ready
+                  0x004604                  _UART3_is_tx_done
+                  0x004598                  _UART3_is_tx_ready
+                  0x00461c                  _UART4_Initialize
+                  0x00482a                  _UART4_Peek
+                  0x004718                  _UART4_Read
+                  0x004750                  _UART4_ReadBuffer
+                  0x0048b8                  _UART4_ReceiveBufferIsEmpty
+                  0x0046d4                  _UART4_Receive_ISR
+                  0x0046c8                  _UART4_SetRxInterruptHandler
+                  0x004668                  _UART4_SetTxInterruptHandler
+                  0x0048e8                  _UART4_StatusGet
+                  0x0047ee                  _UART4_TransferStatusGet
+                  0x0048d0                  _UART4_TransmitBufferIsFull
+                  0x004674                  _UART4_Transmit_ISR
+                  0x004784                  _UART4_Write
+                  0x0047bc                  _UART4_WriteBuffer
+                  0x004852                  _UART4_is_rx_ready
+                  0x0048f0                  _UART4_is_tx_done
+                  0x004884                  _UART4_is_tx_ready
+                  0x00573a                  _UI_message_get
+                  0x005744                  _UI_message_init
+                  0x00572c                  _UI_message_put
+                  0x00571c                  _UI_thread_init
                   0x001a6c                  __Atexit
                   0x001980                  __Closreg
                   0x000f92                  __DNKfflush
@@ -914,112 +914,112 @@ External Symbols in Program Memory (by name):
                   0x000100                  __resetPRI
                   0x000bec                  __sprintf_cdnopuxX
                   0x00287a                  _block_protection_18
-                  0x003b9a                  _buffer_stream
-                  0x005588                  _buildDebugMessage
-                  0x002a70                  _calcCrc
-                  0x002bd4                  _checkForPanelMessages
-                  0x003b1e                  _check_name_token_range
-                  0x003d3a                  _clear_delay_info
-                  0x003920                  _context_switch
+                  0x003b96                  _buffer_stream
+                  0x005586                  _buildDebugMessage
+                  0x002a6c                  _calcCrc
+                  0x002bd0                  _checkForPanelMessages
+                  0x003b1a                  _check_name_token_range
+                  0x003d36                  _clear_delay_info
+                  0x00391c                  _context_switch
                   0x001fa8                  _div
                   0x001992                  _fclose
-                  0x002fa2                  _flash_page_update
-                  0x003078                  _flash_page_write
-                  0x003128                  _flash_read
-                  0x002f7c                  _flash_setup
-                  0x0031d6                  _flash_setup_read
-                  0x0033f6                  _flash_write
-                  0x0054f8                  _formatHex
+                  0x002f9e                  _flash_page_update
+                  0x003074                  _flash_page_write
+                  0x003124                  _flash_read
+                  0x002f78                  _flash_setup
+                  0x0031d2                  _flash_setup_read
+                  0x0033f2                  _flash_write
+                  0x0054f6                  _formatHex
                   0x000b70                  _fputc
                   0x001c12                  _free
                   0x001008                  _fwrite
-                  0x005d5e                  _getPanelData
-                  0x003a6a                  _get_ac_status
-                  0x0039da                  _get_arming_lvl
-                  0x003a36                  _get_audio_volume
-                  0x003a76                  _get_batt_status
-                  0x003a50                  _get_beep_volume
-                  0x003a2c                  _get_brightness
-                  0x003c3a                  _get_calibration_settings
-                  0x003a12                  _get_default_screen
-                  0x003cb6                  _get_panel_firmware_version
-                  0x002e48                  _got_an_ack
+                  0x005d5c                  _getPanelData
+                  0x003a66                  _get_ac_status
+                  0x0039d6                  _get_arming_lvl
+                  0x003a32                  _get_audio_volume
+                  0x003a72                  _get_batt_status
+                  0x003a4c                  _get_beep_volume
+                  0x003a28                  _get_brightness
+                  0x003c36                  _get_calibration_settings
+                  0x003a0e                  _get_default_screen
+                  0x003cb2                  _get_panel_firmware_version
+                  0x002e44                  _got_an_ack
                   0x001a42                  _ldiv
                   0x000686                  _longjmp
-                  0x004e34                  _main
+                  0x004e32                  _main
                   0x001cdc                  _malloc
                   0x0010b0                  _memchr
                   0x0010c4                  _memcpy
                   0x0006aa                  _memset
-                  0x0059b0                  _message_Q_get
-                  0x005946                  _message_Q_initialize
-                  0x00596e                  _message_Q_put
-                  0x0059f8                  _message_Q_status
-                  0x003994                  _mfgCopyToFlash
-                  0x00399a                  _mfgRestoreFromFlash
-                  0x0039b6                  _nvIntegrity
-                  0x00398e                  _nvRestoreFromFlash
-                  0x003fee                  _parse_txt_number
+                  0x0059ae                  _message_Q_get
+                  0x005944                  _message_Q_initialize
+                  0x00596c                  _message_Q_put
+                  0x0059f6                  _message_Q_status
+                  0x003990                  _mfgCopyToFlash
+                  0x003996                  _mfgRestoreFromFlash
+                  0x0039b2                  _nvIntegrity
+                  0x00398a                  _nvRestoreFromFlash
+                  0x003fec                  _parse_txt_number
                   0x0028d0                  _pnlComm_message_get
                   0x0028da                  _pnlComm_message_init
                   0x0028a2                  _pnlComm_put
                   0x002892                  _pnlComm_thread_init
                   0x000722                  _printf
-                  0x002e9c                  _process_stream_packet
+                  0x002e98                  _process_stream_packet
                   0x0006b8                  _putchar
-                  0x002cda                  _readPanelData
-                  0x002df8                  _receivedSpecifiedPkt
-                  0x002e8e                  _releasePanelSerialChannel
-                  0x003554                  _sFlashEraseSector
-                  0x003398                  _sFlashEraseSectors
-                  0x00363c                  _semaphore_get
-                  0x003626                  _semaphore_initialize
-                  0x003726                  _semaphore_put
-                  0x002ada                  _send100msPing
-                  0x005548                  _sendCRLF
-                  0x003cd2                  _sendDisplayVersion
-                  0x00545a                  _sendText
-                  0x005d7a                  _setPanelData
-                  0x003ae6                  _set_ac_trouble
-                  0x0039be                  _set_arming_lvl
-                  0x003b02                  _set_battery_trouble
-                  0x003a1c                  _set_brightness
-                  0x003c60                  _set_calibration_settings
-                  0x003c26                  _set_channel_status
-                  0x0039e6                  _set_chime
-                  0x0039fc                  _set_motionChime
-                  0x003a82                  _set_panel_status
-                  0x003adc                  _set_tstat_schedule
+                  0x002cd6                  _readPanelData
+                  0x002df4                  _receivedSpecifiedPkt
+                  0x002e8a                  _releasePanelSerialChannel
+                  0x003550                  _sFlashEraseSector
+                  0x003394                  _sFlashEraseSectors
+                  0x003638                  _semaphore_get
+                  0x003622                  _semaphore_initialize
+                  0x003722                  _semaphore_put
+                  0x002ad6                  _send100msPing
+                  0x005546                  _sendCRLF
+                  0x003cce                  _sendDisplayVersion
+                  0x005458                  _sendText
+                  0x005d78                  _setPanelData
+                  0x003ae2                  _set_ac_trouble
+                  0x0039ba                  _set_arming_lvl
+                  0x003afe                  _set_battery_trouble
+                  0x003a18                  _set_brightness
+                  0x003c5c                  _set_calibration_settings
+                  0x003c22                  _set_channel_status
+                  0x0039e2                  _set_chime
+                  0x0039f8                  _set_motionChime
+                  0x003a7e                  _set_panel_status
+                  0x003ad8                  _set_tstat_schedule
                   0x00066a                  _setjmp
-                  0x003d2c                  _status_manager_message_init
-                  0x003d04                  _status_manager_thread_init
-                  0x003d22                  _status_message_get
-                  0x003d14                  _status_message_put
+                  0x003d28                  _status_manager_message_init
+                  0x003d00                  _status_manager_thread_init
+                  0x003d1e                  _status_message_get
+                  0x003d10                  _status_message_put
                   0x0006bc                  _strcat
                   0x000bbc                  _strchr
                   0x0006d0                  _strcpy
                   0x0006dc                  _strlen
                   0x0006e8                  _strncpy
-                  0x0038be                  _thread_create
-                  0x0037b4                  _thread_wait
-                  0x00394c                  _threads_initialize
-                  0x00592a                  _timers_milliseconds_elapsed
-                  0x00593a                  _timers_milliseconds_get
-                  0x005914                  _timers_seconds_elapsed
-                  0x005902                  _timers_seconds_get
-                  0x003d54                  _update_sys_timers
-                  0x00360a                  _update_thread_timer
-                  0x0039a6                  _vInit
-                  0x002e74                  _waitForPanelSerialChannel
+                  0x0038ba                  _thread_create
+                  0x0037b0                  _thread_wait
+                  0x003948                  _threads_initialize
+                  0x005928                  _timers_milliseconds_elapsed
+                  0x005938                  _timers_milliseconds_get
+                  0x005912                  _timers_seconds_elapsed
+                  0x005900                  _timers_seconds_get
+                  0x003d50                  _update_sys_timers
+                  0x003606                  _update_thread_timer
+                  0x0039a2                  _vInit
+                  0x002e70                  _waitForPanelSerialChannel
                   0x000654                  _write
-                  0x002c14                  _writePanelData
-                  0x0039a0                  _xInit
-                  0x005d58                  build/default/production/KeypadThread.o:_Keypad_thread
-                  0x003858                  build/default/production/TouchscreenFiles/threads.o:_timer_thread_func
-                  0x005754                  build/default/production/UIthread.o:_UI_thread
-                  0x005426                  build/default/production/debugMessages.o:_DebugMessage_thread
+                  0x002c10                  _writePanelData
+                  0x00399c                  _xInit
+                  0x005d56                  build/default/production/KeypadThread.o:_Keypad_thread
+                  0x003854                  build/default/production/TouchscreenFiles/threads.o:_timer_thread_func
+                  0x005752                  build/default/production/UIthread.o:_UI_thread
+                  0x005424                  build/default/production/debugMessages.o:_DebugMessage_thread
                   0x0028e8                  build/default/production/pnlComm.o:_pnlComm_thread
-                  0x003dc6                  build/default/production/statusmanager.o:_status_manager_thread
+                  0x003dc2                  build/default/production/statusmanager.o:_status_manager_thread
                   0x001a22                  fclose.DA_elo:_closeall
                   0x000706                  printf.DA_eo:_prout
                   0x000bde                  sprintf_cdnopuxX.DAeo:_prout
@@ -1436,13 +1436,13 @@ __FDEVOPT1
  .debug_line      0x001084        0x18e build/default/production/leds.o
  .debug_line      0x001212        0x192 build/default/production/lcd.o
  .debug_line      0x0013a4         0x3c build/default/production/lcd_printf.o
- .debug_line      0x0013e0        0x2a4 build/default/production/pnlComm.o
- .debug_line      0x001684        0x13c build/default/production/debugMessages.o
- .debug_line      0x0017c0        0x120 build/default/production/buttons.o
- .debug_line      0x0018e0         0x9f build/default/production/TouchscreenFiles/queue.o
- .debug_line      0x00197f        0x16a build/default/production/TouchscreenFiles/threads.o
- .debug_line      0x001ae9        0x13a build/default/production/UIthread.o
- .debug_line      0x001c23        0x1cb build/default/production/statusmanager.o
+ .debug_line      0x0013e0        0x2a3 build/default/production/pnlComm.o
+ .debug_line      0x001683        0x13c build/default/production/debugMessages.o
+ .debug_line      0x0017bf        0x120 build/default/production/buttons.o
+ .debug_line      0x0018df         0x9f build/default/production/TouchscreenFiles/queue.o
+ .debug_line      0x00197e        0x16a build/default/production/TouchscreenFiles/threads.o
+ .debug_line      0x001ae8        0x13a build/default/production/UIthread.o
+ .debug_line      0x001c22        0x1cc build/default/production/statusmanager.o
  .debug_line      0x001dee        0x1c4 build/default/production/sys_variables.o
  .debug_line      0x001fb2        0x1c2 build/default/production/dataflashSQI.o
  .debug_line      0x002174         0xcd build/default/production/resources.o
@@ -4192,243 +4192,243 @@ __c30_signature
                     0xa87a                  _block_protection_18
  .const             0xa88c          0x6 build/default/production/debugMessages.o
 
-.text             0x002892       0x2982
- .text            0x002892        0x6ea build/default/production/pnlComm.o
+.text             0x002892       0x2980
+ .text            0x002892        0x6e6 build/default/production/pnlComm.o
                   0x002892                  _pnlComm_thread_init
                   0x0028a2                  _pnlComm_put
                   0x0028d0                  _pnlComm_message_get
                   0x0028da                  _pnlComm_message_init
                   0x0028e8                  build/default/production/pnlComm.o:_pnlComm_thread
-                  0x002a70                  _calcCrc
-                  0x002ada                  _send100msPing
-                  0x002bd4                  _checkForPanelMessages
-                  0x002c14                  _writePanelData
-                  0x002cda                  _readPanelData
-                  0x002df8                  _receivedSpecifiedPkt
-                  0x002e48                  _got_an_ack
-                  0x002e74                  _waitForPanelSerialChannel
-                  0x002e8e                  _releasePanelSerialChannel
-                  0x002e9c                  _process_stream_packet
- .text            0x002f7c        0x68e build/default/production/dataflashSQI.o
-                  0x002f7c                  _flash_setup
-                  0x002fa2                  _flash_page_update
-                  0x003078                  _flash_page_write
-                  0x003128                  _flash_read
-                  0x0031d6                  _flash_setup_read
-                  0x00328c                  _CE_High
-                  0x003398                  _sFlashEraseSectors
-                  0x0033f6                  _flash_write
-                  0x003554                  _sFlashEraseSector
- .text            0x00360a        0x384 build/default/production/TouchscreenFiles/threads.o
-                  0x00360a                  _update_thread_timer
-                  0x003626                  _semaphore_initialize
-                  0x00363c                  _semaphore_get
-                  0x003726                  _semaphore_put
-                  0x0037b4                  _thread_wait
-                  0x003858                  build/default/production/TouchscreenFiles/threads.o:_timer_thread_func
-                  0x0038be                  _thread_create
-                  0x003920                  _context_switch
-                  0x00394c                  _threads_initialize
- .text            0x00398e        0x376 build/default/production/sys_variables.o
-                  0x00398e                  _nvRestoreFromFlash
-                  0x003994                  _mfgCopyToFlash
-                  0x00399a                  _mfgRestoreFromFlash
-                  0x0039a0                  _xInit
-                  0x0039a6                  _vInit
-                  0x0039b6                  _nvIntegrity
-                  0x0039be                  _set_arming_lvl
-                  0x0039da                  _get_arming_lvl
-                  0x0039e6                  _set_chime
-                  0x0039fc                  _set_motionChime
-                  0x003a12                  _get_default_screen
-                  0x003a1c                  _set_brightness
-                  0x003a2c                  _get_brightness
-                  0x003a36                  _get_audio_volume
-                  0x003a50                  _get_beep_volume
-                  0x003a6a                  _get_ac_status
-                  0x003a76                  _get_batt_status
-                  0x003a82                  _set_panel_status
-                  0x003adc                  _set_tstat_schedule
-                  0x003ae6                  _set_ac_trouble
-                  0x003b02                  _set_battery_trouble
-                  0x003b1e                  _check_name_token_range
-                  0x003b9a                  _buffer_stream
-                  0x003c26                  _set_channel_status
-                  0x003c3a                  _get_calibration_settings
-                  0x003c60                  _set_calibration_settings
-                  0x003c92                  _InitSensorQue
-                  0x003cb6                  _get_panel_firmware_version
-                  0x003cd2                  _sendDisplayVersion
- .text            0x003d04        0x342 build/default/production/statusmanager.o
-                  0x003d04                  _status_manager_thread_init
-                  0x003d14                  _status_message_put
-                  0x003d22                  _status_message_get
-                  0x003d2c                  _status_manager_message_init
-                  0x003d3a                  _clear_delay_info
-                  0x003d54                  _update_sys_timers
-                  0x003dc6                  build/default/production/statusmanager.o:_status_manager_thread
-                  0x003fee                  _parse_txt_number
- .text            0x004046        0x2ec build/default/production/mcc_generated_files/uart2.o
-                  0x004046                  _UART2_Initialize
-                  0x004092                  _UART2_SetTxInterruptHandler
-                  0x00409e                  _UART2_Transmit_ISR
-                  0x0040f2                  _UART2_SetRxInterruptHandler
-                  0x0040fe                  _UART2_Receive_ISR
-                  0x004142                  _UART2_Read
-                  0x00417a                  _UART2_ReadBuffer
-                  0x0041ae                  _UART2_Write
-                  0x0041e6                  _UART2_WriteBuffer
-                  0x004218                  _UART2_TransferStatusGet
-                  0x004254                  _UART2_Peek
-                  0x00427c                  _UART2_is_rx_ready
-                  0x0042ae                  _UART2_is_tx_ready
-                  0x0042e2                  _UART2_ReceiveBufferIsEmpty
-                  0x0042fa                  _UART2_TransmitBufferIsFull
-                  0x004312                  _UART2_StatusGet
-                  0x00431a                  _UART2_is_tx_done
- .text            0x004332        0x2ec build/default/production/mcc_generated_files/uart3.o
-                  0x004332                  _UART3_Initialize
-                  0x00437e                  _UART3_SetTxInterruptHandler
-                  0x00438a                  _UART3_Transmit_ISR
-                  0x0043de                  _UART3_SetRxInterruptHandler
-                  0x0043ea                  _UART3_Receive_ISR
-                  0x00442e                  _UART3_Read
-                  0x004466                  _UART3_ReadBuffer
-                  0x00449a                  _UART3_Write
-                  0x0044d2                  _UART3_WriteBuffer
-                  0x004504                  _UART3_TransferStatusGet
-                  0x004540                  _UART3_Peek
-                  0x004568                  _UART3_is_rx_ready
-                  0x00459a                  _UART3_is_tx_ready
-                  0x0045ce                  _UART3_ReceiveBufferIsEmpty
-                  0x0045e6                  _UART3_TransmitBufferIsFull
-                  0x0045fe                  _UART3_StatusGet
-                  0x004606                  _UART3_is_tx_done
- .text            0x00461e        0x2ec build/default/production/mcc_generated_files/uart4.o
-                  0x00461e                  _UART4_Initialize
-                  0x00466a                  _UART4_SetTxInterruptHandler
-                  0x004676                  _UART4_Transmit_ISR
-                  0x0046ca                  _UART4_SetRxInterruptHandler
-                  0x0046d6                  _UART4_Receive_ISR
-                  0x00471a                  _UART4_Read
-                  0x004752                  _UART4_ReadBuffer
-                  0x004786                  _UART4_Write
-                  0x0047be                  _UART4_WriteBuffer
-                  0x0047f0                  _UART4_TransferStatusGet
-                  0x00482c                  _UART4_Peek
-                  0x004854                  _UART4_is_rx_ready
-                  0x004886                  _UART4_is_tx_ready
-                  0x0048ba                  _UART4_ReceiveBufferIsEmpty
-                  0x0048d2                  _UART4_TransmitBufferIsFull
-                  0x0048ea                  _UART4_StatusGet
-                  0x0048f2                  _UART4_is_tx_done
- .text            0x00490a        0x2c0 build/default/production/leds.o
-                  0x00490a                  _LED_On
-                  0x00495c                  _LED_Off
-                  0x0049ae                  _LED_Toggle
-                  0x004abe                  _LED_Get
-                  0x004b78                  _LED_Enable
- .text            0x004bca        0x26a build/default/production/lcd.o
-                  0x004bca                  _LCD_Initialize
-                  0x004c0a                  _LCD_PutString
-                  0x004c44                  _LCD_PutChar
-                  0x004cc8                  _LCD_ClearScreen
-                  0x004dba                  _LCD_CursorEnable
- .text            0x004e34        0x1fa build/default/production/main.o
-                  0x004e34                  _main
- .text            0x00502e        0x1e6 build/default/production/mcc_generated_files/i2c1.o
-                  0x00502e                  _I2C1_Initialize
-                  0x005066                  _I2C1_ErrorCountGet
-                  0x0050b0                  _I2C1_MasterWrite
-                  0x0050e2                  _I2C1_MasterRead
-                  0x005114                  _I2C1_MasterTRBInsert
-                  0x00518e                  _I2C1_MasterReadTRBBuild
-                  0x0051be                  _I2C1_MasterWriteTRBBuild
-                  0x0051e2                  _I2C1_MasterQueueIsEmpty
-                  0x0051fc                  _I2C1_MasterQueueIsFull
+                  0x002a6c                  _calcCrc
+                  0x002ad6                  _send100msPing
+                  0x002bd0                  _checkForPanelMessages
+                  0x002c10                  _writePanelData
+                  0x002cd6                  _readPanelData
+                  0x002df4                  _receivedSpecifiedPkt
+                  0x002e44                  _got_an_ack
+                  0x002e70                  _waitForPanelSerialChannel
+                  0x002e8a                  _releasePanelSerialChannel
+                  0x002e98                  _process_stream_packet
+ .text            0x002f78        0x68e build/default/production/dataflashSQI.o
+                  0x002f78                  _flash_setup
+                  0x002f9e                  _flash_page_update
+                  0x003074                  _flash_page_write
+                  0x003124                  _flash_read
+                  0x0031d2                  _flash_setup_read
+                  0x003288                  _CE_High
+                  0x003394                  _sFlashEraseSectors
+                  0x0033f2                  _flash_write
+                  0x003550                  _sFlashEraseSector
+ .text            0x003606        0x384 build/default/production/TouchscreenFiles/threads.o
+                  0x003606                  _update_thread_timer
+                  0x003622                  _semaphore_initialize
+                  0x003638                  _semaphore_get
+                  0x003722                  _semaphore_put
+                  0x0037b0                  _thread_wait
+                  0x003854                  build/default/production/TouchscreenFiles/threads.o:_timer_thread_func
+                  0x0038ba                  _thread_create
+                  0x00391c                  _context_switch
+                  0x003948                  _threads_initialize
+ .text            0x00398a        0x376 build/default/production/sys_variables.o
+                  0x00398a                  _nvRestoreFromFlash
+                  0x003990                  _mfgCopyToFlash
+                  0x003996                  _mfgRestoreFromFlash
+                  0x00399c                  _xInit
+                  0x0039a2                  _vInit
+                  0x0039b2                  _nvIntegrity
+                  0x0039ba                  _set_arming_lvl
+                  0x0039d6                  _get_arming_lvl
+                  0x0039e2                  _set_chime
+                  0x0039f8                  _set_motionChime
+                  0x003a0e                  _get_default_screen
+                  0x003a18                  _set_brightness
+                  0x003a28                  _get_brightness
+                  0x003a32                  _get_audio_volume
+                  0x003a4c                  _get_beep_volume
+                  0x003a66                  _get_ac_status
+                  0x003a72                  _get_batt_status
+                  0x003a7e                  _set_panel_status
+                  0x003ad8                  _set_tstat_schedule
+                  0x003ae2                  _set_ac_trouble
+                  0x003afe                  _set_battery_trouble
+                  0x003b1a                  _check_name_token_range
+                  0x003b96                  _buffer_stream
+                  0x003c22                  _set_channel_status
+                  0x003c36                  _get_calibration_settings
+                  0x003c5c                  _set_calibration_settings
+                  0x003c8e                  _InitSensorQue
+                  0x003cb2                  _get_panel_firmware_version
+                  0x003cce                  _sendDisplayVersion
+ .text            0x003d00        0x344 build/default/production/statusmanager.o
+                  0x003d00                  _status_manager_thread_init
+                  0x003d10                  _status_message_put
+                  0x003d1e                  _status_message_get
+                  0x003d28                  _status_manager_message_init
+                  0x003d36                  _clear_delay_info
+                  0x003d50                  _update_sys_timers
+                  0x003dc2                  build/default/production/statusmanager.o:_status_manager_thread
+                  0x003fec                  _parse_txt_number
+ .text            0x004044        0x2ec build/default/production/mcc_generated_files/uart2.o
+                  0x004044                  _UART2_Initialize
+                  0x004090                  _UART2_SetTxInterruptHandler
+                  0x00409c                  _UART2_Transmit_ISR
+                  0x0040f0                  _UART2_SetRxInterruptHandler
+                  0x0040fc                  _UART2_Receive_ISR
+                  0x004140                  _UART2_Read
+                  0x004178                  _UART2_ReadBuffer
+                  0x0041ac                  _UART2_Write
+                  0x0041e4                  _UART2_WriteBuffer
+                  0x004216                  _UART2_TransferStatusGet
+                  0x004252                  _UART2_Peek
+                  0x00427a                  _UART2_is_rx_ready
+                  0x0042ac                  _UART2_is_tx_ready
+                  0x0042e0                  _UART2_ReceiveBufferIsEmpty
+                  0x0042f8                  _UART2_TransmitBufferIsFull
+                  0x004310                  _UART2_StatusGet
+                  0x004318                  _UART2_is_tx_done
+ .text            0x004330        0x2ec build/default/production/mcc_generated_files/uart3.o
+                  0x004330                  _UART3_Initialize
+                  0x00437c                  _UART3_SetTxInterruptHandler
+                  0x004388                  _UART3_Transmit_ISR
+                  0x0043dc                  _UART3_SetRxInterruptHandler
+                  0x0043e8                  _UART3_Receive_ISR
+                  0x00442c                  _UART3_Read
+                  0x004464                  _UART3_ReadBuffer
+                  0x004498                  _UART3_Write
+                  0x0044d0                  _UART3_WriteBuffer
+                  0x004502                  _UART3_TransferStatusGet
+                  0x00453e                  _UART3_Peek
+                  0x004566                  _UART3_is_rx_ready
+                  0x004598                  _UART3_is_tx_ready
+                  0x0045cc                  _UART3_ReceiveBufferIsEmpty
+                  0x0045e4                  _UART3_TransmitBufferIsFull
+                  0x0045fc                  _UART3_StatusGet
+                  0x004604                  _UART3_is_tx_done
+ .text            0x00461c        0x2ec build/default/production/mcc_generated_files/uart4.o
+                  0x00461c                  _UART4_Initialize
+                  0x004668                  _UART4_SetTxInterruptHandler
+                  0x004674                  _UART4_Transmit_ISR
+                  0x0046c8                  _UART4_SetRxInterruptHandler
+                  0x0046d4                  _UART4_Receive_ISR
+                  0x004718                  _UART4_Read
+                  0x004750                  _UART4_ReadBuffer
+                  0x004784                  _UART4_Write
+                  0x0047bc                  _UART4_WriteBuffer
+                  0x0047ee                  _UART4_TransferStatusGet
+                  0x00482a                  _UART4_Peek
+                  0x004852                  _UART4_is_rx_ready
+                  0x004884                  _UART4_is_tx_ready
+                  0x0048b8                  _UART4_ReceiveBufferIsEmpty
+                  0x0048d0                  _UART4_TransmitBufferIsFull
+                  0x0048e8                  _UART4_StatusGet
+                  0x0048f0                  _UART4_is_tx_done
+ .text            0x004908        0x2c0 build/default/production/leds.o
+                  0x004908                  _LED_On
+                  0x00495a                  _LED_Off
+                  0x0049ac                  _LED_Toggle
+                  0x004abc                  _LED_Get
+                  0x004b76                  _LED_Enable
+ .text            0x004bc8        0x26a build/default/production/lcd.o
+                  0x004bc8                  _LCD_Initialize
+                  0x004c08                  _LCD_PutString
+                  0x004c42                  _LCD_PutChar
+                  0x004cc6                  _LCD_ClearScreen
+                  0x004db8                  _LCD_CursorEnable
+ .text            0x004e32        0x1fa build/default/production/main.o
+                  0x004e32                  _main
+ .text            0x00502c        0x1e6 build/default/production/mcc_generated_files/i2c1.o
+                  0x00502c                  _I2C1_Initialize
+                  0x005064                  _I2C1_ErrorCountGet
+                  0x0050ae                  _I2C1_MasterWrite
+                  0x0050e0                  _I2C1_MasterRead
+                  0x005112                  _I2C1_MasterTRBInsert
+                  0x00518c                  _I2C1_MasterReadTRBBuild
+                  0x0051bc                  _I2C1_MasterWriteTRBBuild
+                  0x0051e0                  _I2C1_MasterQueueIsEmpty
+                  0x0051fa                  _I2C1_MasterQueueIsFull
 
-.dinit            0x005214        0x1dc
- .dinit           0x005214        0x1dc data_init
+.dinit            0x005212        0x1dc
+ .dinit           0x005212        0x1dc data_init
 
-.text             0x0053f0        0x9a0
- .text            0x0053f0        0x1ca build/default/production/debugMessages.o
-                  0x0053f0                  _DebugMessage_thread_init
-                  0x005400                  _DebugMessage_message_put
-                  0x00540e                  _DebugMessage_message_get
-                  0x005418                  _DebugMessage_message_init
-                  0x005426                  build/default/production/debugMessages.o:_DebugMessage_thread
-                  0x00545a                  _sendText
-                  0x0054f8                  _formatHex
-                  0x005548                  _sendCRLF
-                  0x005588                  _buildDebugMessage
- .text            0x0055ba        0x164 build/default/production/mcc_generated_files/spi1.o
-                  0x0055ba                  _SPI1_Initialize
-                  0x0055d4                  _SPI1_Exchange
-                  0x005604                  _SPI1_ExchangeBuffer
-                  0x0056ce                  _SPI1_Exchange8bit
-                  0x0056de                  _SPI1_Exchange8bitBuffer
-                  0x0056f2                  _SPI1_TransferModeGet
-                  0x005716                  _SPI1_StatusGet
- .text            0x00571e        0x144 build/default/production/UIthread.o
-                  0x00571e                  _UI_thread_init
-                  0x00572e                  _UI_message_put
-                  0x00573c                  _UI_message_get
-                  0x005746                  _UI_message_init
-                  0x005754                  build/default/production/UIthread.o:_UI_thread
- .text            0x005862         0xe4 build/default/production/mcc_generated_files/tmr3.o
-                  0x005862                  _TMR3_Initialize
-                  0x00587c                  _TMR3_Period16BitSet
-                  0x00588e                  _TMR3_Period16BitGet
-                  0x005896                  _TMR3_Counter16BitSet
-                  0x0058a8                  _TMR3_Counter16BitGet
-                  0x0058b0                  _TMR3_CallBack
-                  0x0058b8                  _TMR3_Start
-                  0x0058c8                  _TMR3_Stop
-                  0x0058d2                  _TMR3_GetElapsedThenClear
-                  0x0058ea                  _TMR3_SoftwareCounterGet
-                  0x0058f6                  _TMR3_SoftwareCounterClear
-                  0x005902                  _timers_seconds_get
-                  0x005914                  _timers_seconds_elapsed
-                  0x00592a                  _timers_milliseconds_elapsed
-                  0x00593a                  _timers_milliseconds_get
- .text            0x005946         0xcc build/default/production/TouchscreenFiles/queue.o
-                  0x005946                  _message_Q_initialize
-                  0x00596e                  _message_Q_put
-                  0x0059b0                  _message_Q_get
-                  0x0059f8                  _message_Q_status
- .text            0x005a12         0xc2 build/default/production/mcc_generated_files/pin_manager.o
-                  0x005a12                  _PIN_MANAGER_Initialize
- .text            0x005ad4         0xa4 build/default/production/buttons.o
-                  0x005ad4                  _BUTTON_IsPressed
-                  0x005b40                  _BUTTON_Enable
- .text            0x005b78         0x9e build/default/production/mcc_generated_files/tmr2.o
-                  0x005b78                  _TMR2_Initialize
-                  0x005b92                  _TMR2_Period16BitSet
-                  0x005ba4                  _TMR2_Period16BitGet
-                  0x005bac                  _TMR2_Counter16BitSet
-                  0x005bbe                  _TMR2_Counter16BitGet
-                  0x005bc6                  _TMR2_CallBack
-                  0x005bcc                  _TMR2_Start
-                  0x005bdc                  _TMR2_Stop
-                  0x005be6                  _TMR2_GetElapsedThenClear
-                  0x005bfe                  _TMR2_SoftwareCounterGet
-                  0x005c0a                  _TMR2_SoftwareCounterClear
- .text            0x005c16         0x74 build/default/production/mcc_generated_files/interrupt_manager.o
-                  0x005c16                  _INTERRUPT_Initialize
- .text            0x005c8a         0x56 build/default/production/mcc_generated_files/uart1.o
-                  0x005c8a                  _UART1_Initialize
-                  0x005ca2                  _UART1_Read
-                  0x005cc0                  _UART1_Write
-                  0x005cd8                  _UART1_StatusGet
- .text            0x005ce0         0x42 build/default/production/mcc_generated_files/mcc.o
-                  0x005ce0                  _SYSTEM_Initialize
-                  0x005cf8                  _OSCILLATOR_Initialize
- .text            0x005d22         0x3c build/default/production/KeypadThread.o
-                  0x005d22                  _Keypad_thread_init
-                  0x005d32                  _Keypad_message_put
-                  0x005d40                  _Keypad_message_get
-                  0x005d4a                  _Keypad_message_init
-                  0x005d58                  build/default/production/KeypadThread.o:_Keypad_thread
- .text            0x005d5e         0x32 build/default/production/resources.o
-                  0x005d5e                  _getPanelData
-                  0x005d7a                  _setPanelData
+.text             0x0053ee        0x9a0
+ .text            0x0053ee        0x1ca build/default/production/debugMessages.o
+                  0x0053ee                  _DebugMessage_thread_init
+                  0x0053fe                  _DebugMessage_message_put
+                  0x00540c                  _DebugMessage_message_get
+                  0x005416                  _DebugMessage_message_init
+                  0x005424                  build/default/production/debugMessages.o:_DebugMessage_thread
+                  0x005458                  _sendText
+                  0x0054f6                  _formatHex
+                  0x005546                  _sendCRLF
+                  0x005586                  _buildDebugMessage
+ .text            0x0055b8        0x164 build/default/production/mcc_generated_files/spi1.o
+                  0x0055b8                  _SPI1_Initialize
+                  0x0055d2                  _SPI1_Exchange
+                  0x005602                  _SPI1_ExchangeBuffer
+                  0x0056cc                  _SPI1_Exchange8bit
+                  0x0056dc                  _SPI1_Exchange8bitBuffer
+                  0x0056f0                  _SPI1_TransferModeGet
+                  0x005714                  _SPI1_StatusGet
+ .text            0x00571c        0x144 build/default/production/UIthread.o
+                  0x00571c                  _UI_thread_init
+                  0x00572c                  _UI_message_put
+                  0x00573a                  _UI_message_get
+                  0x005744                  _UI_message_init
+                  0x005752                  build/default/production/UIthread.o:_UI_thread
+ .text            0x005860         0xe4 build/default/production/mcc_generated_files/tmr3.o
+                  0x005860                  _TMR3_Initialize
+                  0x00587a                  _TMR3_Period16BitSet
+                  0x00588c                  _TMR3_Period16BitGet
+                  0x005894                  _TMR3_Counter16BitSet
+                  0x0058a6                  _TMR3_Counter16BitGet
+                  0x0058ae                  _TMR3_CallBack
+                  0x0058b6                  _TMR3_Start
+                  0x0058c6                  _TMR3_Stop
+                  0x0058d0                  _TMR3_GetElapsedThenClear
+                  0x0058e8                  _TMR3_SoftwareCounterGet
+                  0x0058f4                  _TMR3_SoftwareCounterClear
+                  0x005900                  _timers_seconds_get
+                  0x005912                  _timers_seconds_elapsed
+                  0x005928                  _timers_milliseconds_elapsed
+                  0x005938                  _timers_milliseconds_get
+ .text            0x005944         0xcc build/default/production/TouchscreenFiles/queue.o
+                  0x005944                  _message_Q_initialize
+                  0x00596c                  _message_Q_put
+                  0x0059ae                  _message_Q_get
+                  0x0059f6                  _message_Q_status
+ .text            0x005a10         0xc2 build/default/production/mcc_generated_files/pin_manager.o
+                  0x005a10                  _PIN_MANAGER_Initialize
+ .text            0x005ad2         0xa4 build/default/production/buttons.o
+                  0x005ad2                  _BUTTON_IsPressed
+                  0x005b3e                  _BUTTON_Enable
+ .text            0x005b76         0x9e build/default/production/mcc_generated_files/tmr2.o
+                  0x005b76                  _TMR2_Initialize
+                  0x005b90                  _TMR2_Period16BitSet
+                  0x005ba2                  _TMR2_Period16BitGet
+                  0x005baa                  _TMR2_Counter16BitSet
+                  0x005bbc                  _TMR2_Counter16BitGet
+                  0x005bc4                  _TMR2_CallBack
+                  0x005bca                  _TMR2_Start
+                  0x005bda                  _TMR2_Stop
+                  0x005be4                  _TMR2_GetElapsedThenClear
+                  0x005bfc                  _TMR2_SoftwareCounterGet
+                  0x005c08                  _TMR2_SoftwareCounterClear
+ .text            0x005c14         0x74 build/default/production/mcc_generated_files/interrupt_manager.o
+                  0x005c14                  _INTERRUPT_Initialize
+ .text            0x005c88         0x56 build/default/production/mcc_generated_files/uart1.o
+                  0x005c88                  _UART1_Initialize
+                  0x005ca0                  _UART1_Read
+                  0x005cbe                  _UART1_Write
+                  0x005cd6                  _UART1_StatusGet
+ .text            0x005cde         0x42 build/default/production/mcc_generated_files/mcc.o
+                  0x005cde                  _SYSTEM_Initialize
+                  0x005cf6                  _OSCILLATOR_Initialize
+ .text            0x005d20         0x3c build/default/production/KeypadThread.o
+                  0x005d20                  _Keypad_thread_init
+                  0x005d30                  _Keypad_message_put
+                  0x005d3e                  _Keypad_message_get
+                  0x005d48                  _Keypad_message_init
+                  0x005d56                  build/default/production/KeypadThread.o:_Keypad_thread
+ .text            0x005d5c         0x32 build/default/production/resources.o
+                  0x005d5c                  _getPanelData
+                  0x005d78                  _setPanelData

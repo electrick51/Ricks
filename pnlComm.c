@@ -225,7 +225,7 @@ static void pnlComm_thread(void)
 
             buildDebugMessage(&debugMsg, "Got a packet to send\n\r", 1, 0, "PC");
             debugMsg.tag = msg_debug_message;
-            DebugMessage_message_put(&debugMsg);
+//            DebugMessage_message_put(&debugMsg);
             context_switch();
                //             sendText("Sending One key\n\r", 1, 0);
             thread_wait(30);

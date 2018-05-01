@@ -300,6 +300,7 @@ static void status_manager_thread(void)
                             context_switch();
                //             sendText("Sending One key\n\r", 1, 0);
                             thread_wait(30);
+                            break;
                         case SystemPingPktCode:
                             
                             buildDebugMessage(&debugMsg, "Got Ping packet\n\r", 1, 0, "SM");
